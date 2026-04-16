@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #86BC25;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_text {
+    min-width: 50px;
+    align-items: center;
+    font-size: 10px;
+    color: aliceblue;
+}
+
+
+@media (max-width: 500px) {
+  .header_box {
+    display: none;
+  }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 2vh;
+    height: 500px;
+    background-color: #1F1F1F;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 400;
+}
+
+.hero-content-text {
+    color: aliceblue;
+    padding-bottom: 250px;
+}
+
+.first-div {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-div-header {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.page {
+    align-self: center;
+    width: 60%;
+    height: 450px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 1px;
+}
+
+canvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
