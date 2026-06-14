@@ -4,54 +4,84 @@
 
 
 {% block content %}
-<div class="header">
+<div class="header-div">
+
     <div class="club-name text inline">
         <h2>AI Consulting Club</h2>
     </div> 
+
     <div class="header-options inline">
-        <a class="text header-links" href="team.html">About</a>
+        <a class="text header-links" href="about.html">About</a>
         <a class="text header-links" href="team.html">What We Do</a>
         <a class="text header-links" href="portfolio.html">Portfolio</a>
+        <a class="text header-links" href="students_page.html"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="clients_page.html"><span class="gold">For Clients</span></a>
     </div>
 </div>
 
 
-<div class="hero-text text">
-    <span id="hero-text-where" class="hidden-transition">Where</span>
-    &nbsp;
-    <span id="hero-text-ai" class="AI-red hidden-transition">AI</span>
-    &nbsp;
-    <span id="hero-text-meets" class="hidden-transition">Meets</span>
-    &nbsp;
-    <span id="hero-text-consulting" class="consulting-blue hidden-transition">Consulting</span>
+<div class="main-container">
+    <div class="left-spacing"></div>
+    
+    <div class="hero-container">
+    
+        <div class="hero-left-container">
+        <p class="founded-text text charcoal">Purdue University | Founded in 2026</p>
+    
+        <p class="text hero-text">Where AI meets</p>
+        <p class="text hero-text"><span class="gold italize">real-world</span> strategy...</p>
+    
+        <p class="main-description">
+            <span>We are Purdue's first AI focused student-run consluting club that focuses on</span>
+            <span>real client interactions to deliver AI-powered solutions and create measurable</span>
+            <span>impact on investment.</span>
+        </p>
+
+        <p class="main-description">
+            <span class="application-text">Now accepting applications for Fall 2026!</span>
+        </p>
+
+    </div>
+    
+    <div class="hero-right-container">
+        <img src="{{ url_for('static', filename='images/purdue_pic.jpg') }}" class="purdue-pic">
+        </div>
+    </div>
 </div>
 
-<div class="hero-text-paragraph text hidden-transition" id="hero-text-paragraph">
-    Placeholder
+
+
+<div class="valuable-facts">
+    <div class="fact text">
+        <p>
+            <span class="block fact-number charcoal">4</span>
+            <span>FOUNDING MEMBERS</span>
+        </p>
+    </div>
+    <div class="fact text">
+        <p>
+            <span class="block fact-number charcoal">12<span class="gold">+</span></span>
+            <span>STUDENT COHORT</span>
+        </p>
+        
+    </div>
+    <div class="fact-right text">
+        <p>
+            <span class="block fact-number charcoal">2</span>
+            <span>CLIENTS FOR FIRST SEMESTER</span>
+        </p>
+    </div>
 </div>
 
-<pre>
+<div class="promotion-div">
+    <p class="promotion-text gold text inline">
+        <span class="block">Ready to Solve</span>
+        <span>Problems with AI?</span>
+    </p>
+    <button class="application-button text inline">Apply Here</button>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
 
 <div class="main-meet-team-div" id="main-meet-team-div">
     <div class="meet-team-text text hidden-transition">
@@ -70,7 +100,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='js/fade.js') }}"></script>
+<!-- <script src="{{ url_for('static', filename='js/fade.js') }}"></script> -->
 {% endblock %}
 
 <!--

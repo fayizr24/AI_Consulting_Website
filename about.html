@@ -1,9 +1,12 @@
-{% extends "base.html" %}
-
-{% block title %}About Us{% endblock %}
-
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <div class="header-div">
 
@@ -29,7 +32,7 @@
 
     <div class="team-div" id="team-div">
         <div id="team-div-jiya" class="person-card glass">
-            <img src="{{ url_for('static', filename='images/Jiya_picture.jpeg') }}" class="headshot-pic">
+            <img src="static/images/Jiya_picture.jpeg" class="headshot-pic">
         </div>
         <div id="team-div-nishant" class="person-card glass"></div>
         <div id="team-div-fabian" class="person-card glass"></div>
@@ -81,20 +84,7 @@
             <p class="tag text">Final</p>
         </div>
     </div>
-
-    <!-- <div class="tag-container">
-        <p class="tag text">Apps Open</p>
-        <p class="tag text">Coffee Chats</p>
-        <p class="tag text">Callout #1</p>
-        <p class="tag text">Callout #2</p>
-        <p class="tag text">Apps Close</p>
-        <p class="tag text">Behavioural (R1)</p>
-        <p class="tag text">Case (R2)</p>
-        <p class="tag text">Final</p>
-    </div> -->
-    
-    
-
 </div>
 
-{% endblock %}
+</body>
+</html>

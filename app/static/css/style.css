@@ -1,55 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
 
 
-/*
-Primary:
-
-#0F172A (navy slate)
-#1E293B (cool grey‑blue)
-
-Accent:
-
-#38BDF8 (light cyan)
-#818CF8 (soft purple)
-
-Text:
-
-#F8FAFC (white)
-#CBD5E1 (light grey)
-*/
+/* [Transition tags[ */
 
 .hidden-transition {
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-.show {
+.show-transition {
     opacity: 1;
 }
-
-
-
-.text {
-    font-family: Georgia, serif;
-}
+/*-------------------------------*/
+/* [Common Tag Properties] */
 
 .inline {
     display: inline-block;
 }
 
-.AI-red {
-    color: rgb(218, 61, 61);
+.block {
+    display: block;
 }
 
-
-.consulting-blue {
-    color: rgb(64, 119, 186);
+.hidden {
+    display: none;
 }
-
-
+/*-------------------------------*/
+/* [Base Tag Properties] */
 
 body {
-    background-color: #0F172A;
+    background-color: #E8E8E4;
+    overflow-x: hidden;
 }
 
 a {
@@ -59,16 +40,40 @@ a {
 }
 
 a:hover {
-    color: #CBD5E1;
+    color: #3c3c3c;
 }
 
 a:visited {
     color: inherit;
 }
+/*-------------------------------*/
+/* [Text Tag Properties] */
 
-.header {
-    color: #F8FAFC;
-    background-color:#1E293B;
+.text {
+    font-family: Georgia, serif;
+}
+
+.italize {
+    font-style: italic;
+}
+
+.gold {
+    color: #B8922A;
+}
+
+.charcoal {
+    color: #2D2D2D;
+}
+
+.stone {
+    color: #888888;
+}
+/*-------------------------------*/
+/* [Header Properties] */
+
+.header-div {
+    color: #000000 ;
+    background-color:#E8E8E4;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -77,42 +82,172 @@ a:visited {
     position: sticky;
     top: 0;
     z-index: 999;
+    height: 80px;
+    border-bottom: 1px solid #8888883e;
+    width: 1340px;
 }
 
 .club-name {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .header-options {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .header-links {
     margin-left: 50px;
 }
+/*-------------------------------*/
+/* [Hero Container Tags] */
 
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-spacing { /* This determines the margin on the left side of the page */
+    width: 50px;
+}
+
+.founded-text {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.hero-container { /* This is where the main hero text is */
+    display: flex;
+    justify-content: right;
+}
 
 .hero-text {
     width: 100%;
-    margin-top: 150px;
-    font-size: 40px;
-    display: flex;
-    color: #F8FAFC;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 60px;
+    font-weight: bold;
 }
 
-.hero-text-paragraph {
-    color: #F8FAFC;
+.main-description {
+    margin-left: 0px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 20px;
     display: flex;
-    color: #F8FAFC;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
 }
 
+.application-text {
+    margin-left: 180px;
+}
+
+/*-------------------------------*/
+/* [Picture Tags] */
+
+.hero-right-container {
+    display: flex;
+    align-items: right;
+    width: 500px;
+}
+
+.purdue-pic {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 200px;
+    margin-right: 0px;
+    width: 530px;
+    height: 580px;
+    box-shadow: 0px 0px 100px #F7F7F5
+;
+}
+
+
+/*-------------------------------*/
+/* [Important Facts Tags] */
+
+.valuable-facts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 80px;
+    font-size: 18px;
+    border: 1px solid #8888883e;
+    border-left: none;
+    color: #888888;
+    font-family: Calibri, sans-serif;
+    /* box-shadow: 2px 2px 5px #111111;  */
+}
+
+.fact-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 80px;
+    font-size: 18px;
+    border: 1px solid #8888883e;
+    border-left: none;
+    border-right: none;
+    color: #888888;
+    font-family: Calibri, sans-serif;
+    /* box-shadow: 2px 2px 5px #111111;  */
+}
+
+.fact-number {
+    font-size: 35px;
+}
+
+
+/*-------------------------------*/
+/* [Promotion Div Tags] */
+
+.promotion-div {
+    margin-top: 15px;
+    background-color: #000000;
+
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+}
+
+.promotion-text {
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.application-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1c1c;
+    border-radius: 10px;
+    color: #B8922A;
+    width: 200px;
+    height: 50px;
+    font-size:  20px;
+    margin-left: 400px;
+}
+
+.application-button:hover {
+    cursor: pointer;
+}
+/*-------------------------------*/
+/* [Meet the Team Tags] */
 
 .meet-team-text {
     margin-top: 100px;
@@ -137,4 +272,195 @@ a:visited {
     height: 350px;
     width: 250px;
     border-radius: 10px;
+}
+/*-------------------------------*/
+
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.627);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+}
+
+
+
+
+.about-founders-div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+.meet-team-text {
+    margin-top: 100px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: #F8FAFC;
+}
+
+.main-meet-the-team-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person-card {
+    margin: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 331px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.headshot-pic {
+    height: 331px;
+    width: 300px;
+}
+
+
+.timeline-div {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.timeline-line {
+    width: 2500px;
+    height:5px;
+    background-color: black;
+    z-index: 10;
+    margin: auto;
+}
+
+.spot-container {
+    display: flex;
+    position: relative;
+    bottom: 68px;
+}
+
+.spot {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.tag-container {
+    display: flex;
+}
+
+.tag {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.single-spot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .spot-1 {
+    position: relative;
+}
+
+.spot-2 {
+    position: relative;
+}
+
+.spot-3 {
+    position: absolute;
+}
+
+.spot-4 {
+    position: absolute;
+}
+
+.spot-5 {
+    position: absolute;
+}
+
+.spot-6 {
+    position: absolute;
+}
+
+.spot-7 {
+    position: absolute;
+}
+
+.spot-8 {
+    position: absolute;
+} */
+
+
+/* .tag-1 {
+    position: absolute;
+    right: 1200px;
+    top: 0px;
+}
+
+.tag-2 {
+    position: absolute;
+    right: 1050px;
+    top: 200px;
+}
+
+.tag-3 {
+    position: absolute;
+    right: 900px;
+    top: 100px;
+}
+
+.tag-4 {
+    position: absolute;
+    right: 750px;
+    top: 200px;
+}
+
+.tag-5 {
+    position: absolute;
+    right: 600px;
+    top: 100px;
+}
+
+.tag-6 {
+    position: absolute;
+    right: 450px;
+    top: 200px;
+}
+
+.tag-7 {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+}
+
+.tag-8 {
+    position: absolute;
+    right: 150px;
+    top: 200px;
+} */
+
+
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: black;
 }

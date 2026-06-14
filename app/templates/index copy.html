@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}AI Consulting Club{% endblock %}
+
+
+{% block content %}
+<div class="header">
+    <div class="club-name text inline">
+        <h2>AI Consulting Club</h2>
+    </div> 
+    <div class="header-options inline">
+        <a class="text header-links" href="about.html">About</a>
+        <a class="text header-links" href="team.html">What We Do</a>
+        <a class="text header-links" href="portfolio.html">Portfolio</a>
+        <a class="text header-links" href="students_page.html"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="clients_page.html"> For Clients</a>
+    </div>
+</div>
+
+
+<!-- <div class="">
+    <span id="welcome-header" class="header-color hidden-transition">Welcome</span>
+    &nbsp;
+    <span id="pioneers-header" class="header-color hidden-transition">Pioneers!</span>
+
+    <p class="hero-text text charcoal">Applications Open!</p>
+    <button class="application-button"> Application Form</button>
+</div> -->
+
+<div class="main"></div>
+<div class="left-spacing"></div>
+
+<div class="hero-container">
+
+    <div class="hero-left-container">
+    <p class="founded text">Purdue University | Founded in 2026</p>
+
+    <p class="text hero-text-1">Where AI meets</p>
+    <p class="text hero-text-2">real world strategy</p>
+
+    <p class="main-description"> We are Purdue's 1st consulting club that focuses on real client interactions to deliver AI-powered solutions.</p>
+</div>
+    <div class="hero-right-container">
+    </div>
+</div>
+
+
+
+<div class="valuable-facts">
+    <div class="fact text">4 founding members</div>
+    <div class="fact text">12+ Student Cohort</div>
+    <div class="fact text">2 clients for first semester</div>
+</div>
+
+<div class="promotion-div">
+    <p>Get Involved</p>
+    <p>Ready to Solve Problems with AI?</p>
+</div>
+
+<div id="highlights" class="highlight-divs">
+
+    <div id="highlight-0" class="frame glass"> Div 1</div> 
+    <div id="highlight-1" class="frame glass left-start"> div 2</div> 
+    <div id="highlight-2" class="frame glass"> div 3</div>
+    <div id="highlight-3" class="frame glass right-start">Div 4</div>
+    <div id="highlight-4" class="frame glass">div 5</div> 
+    
+</div>
+
+<div class="hero-text-paragraph text hidden-transition" id="hero-text-paragraph">
+    Placeholder
+</div>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<div class="main-meet-team-div" id="main-meet-team-div">
+    <div class="meet-team-text text hidden-transition">
+        Meet the Team!
+    </div>
+    <div class="team-div hidden-transition" id="team-div">
+        <div id="team-div-jiya" class="person-card"></div>
+        <div id="team-div-nishant" class="person-card"></div>
+        <div id="team-div-fabian" class="person-card"></div>
+        <div id="team-div-fayiz" class="person-card"></div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/fade.js') }}"></script>
+{% endblock %}
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+<script src="{{ url_for('static', filename='js/sketch.js') }}"></script>
+-->
