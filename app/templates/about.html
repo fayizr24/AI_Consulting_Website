@@ -30,12 +30,17 @@
     <div class="team-div" id="team-div">
         <div id="team-div-jiya" class="person-card glass">
             <img src="{{ url_for('static', filename='images/Jiya_picture.jpeg') }}" class="headshot-pic">
+            <div id="info-panel-jiya" class="profile-info-bar info-panel"></div>
+            <div id="info-div-jiya" class="profile-info-div info-panel hidden-transition"></div>
         </div>
         <div id="team-div-nishant" class="person-card glass"></div>
         <div id="team-div-fabian" class="person-card glass"></div>
         <div id="team-div-fayiz" class="person-card glass"></div>
     </div>
 </div>
+
+
+
 
 <div class="timeline-div">
     <div class="timeline-line"></div>
@@ -97,4 +102,8 @@
 
 </div>
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/fade.js') }}"></script>
 {% endblock %}
