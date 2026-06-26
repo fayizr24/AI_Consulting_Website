@@ -1,1 +1,206 @@
 {% extends "base.html" %}
+
+{% block title %}For Clients{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/clients_page.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="header-div">
+    <div class="club-name text inline">
+        <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+    </div>
+    <div class="header-options inline">
+        <a class="text header-links" href="/">Home</a>
+        <a class="text header-links" href="/about">About</a>
+        <a class="text header-links" href="/what-we-do">What We Do</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
+    </div>
+</div>
+
+
+<!-- HERO -->
+<div class="cp-hero">
+    <p class="wwd-label text gold">Work With Us</p>
+    <h1 class="cp-hero-title hero-text">
+        Real AI expertise.<br>
+        <span class="gold italize">Student-driven.</span> Results-focused.
+    </h1>
+    <p class="cp-hero-sub">
+        We partner with organizations of all sizes to find where AI can create genuine value —
+        and we do it with the rigor of a consulting firm and the energy of a team that genuinely cares.
+    </p>
+    <a href="#cp-contact"><button class="application-button text cp-hero-btn">Get In Touch</button></a>
+</div>
+
+
+<!-- CLIENTS WE HELP -->
+<div class="cp-clients-section">
+    <p class="wwd-section-label text">Who We Work With</p>
+    <h2 class="cp-section-title text">Clients we help.</h2>
+    <div class="cp-clients-grid">
+
+        <div class="cp-client-card">
+            <p class="cp-client-icon">&#128640;</p>
+            <p class="cp-client-head text">Startups</p>
+            <p class="cp-client-body">Early-stage teams moving fast who need to figure out where AI fits into their product, process, or pitch — without the overhead of a full consulting engagement.</p>
+        </div>
+
+        <div class="cp-client-card">
+            <p class="cp-client-icon">&#10084;</p>
+            <p class="cp-client-head text">Nonprofits</p>
+            <p class="cp-client-body">Mission-driven organizations looking to do more with less. We help nonprofits identify high-impact, low-cost AI opportunities that stretch limited resources further.</p>
+        </div>
+
+        <div class="cp-client-card">
+            <p class="cp-client-icon">&#127970;</p>
+            <p class="cp-client-head text">Small &amp; Large Companies</p>
+            <p class="cp-client-body">Whether you're a local business exploring automation or a larger company scoping an AI initiative, we bring fresh eyes, structured thinking, and honest recommendations.</p>
+        </div>
+
+        <div class="cp-client-card">
+            <p class="cp-client-icon">&#127979;</p>
+            <p class="cp-client-head text">Universities</p>
+            <p class="cp-client-body">Academic departments and research groups looking to apply AI to their workflows, datasets, or outreach. We understand the university environment because we live in it.</p>
+        </div>
+
+        <div class="cp-client-card">
+            <p class="cp-client-icon">&#129309;</p>
+            <p class="cp-client-head text">Student Organizations</p>
+            <p class="cp-client-body">Other student orgs on campus looking to modernize operations, automate repetitive tasks, or understand how AI tools can help them grow their impact and membership.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- SERVICES -->
+<div class="cp-services-section">
+    <div class="cp-services-left">
+        <p class="wwd-section-label text">What We Offer</p>
+        <h2 class="cp-section-title text" style="color:#f0ede8;">Services.</h2>
+        <p class="cp-services-note">Every engagement is tailored to your goals. We don't offer cookie-cutter solutions.</p>
+    </div>
+    <div class="cp-services-right">
+
+        <div class="cp-service-row">
+            <p class="cp-service-title text">AI Readiness Assessment</p>
+            <p class="cp-service-desc">We audit your current workflows and data landscape to identify where AI can realistically add value — and where it can't. You walk away with a clear, honest picture.</p>
+        </div>
+
+        <div class="cp-service-row">
+            <p class="cp-service-title text">Strategy &amp; Roadmapping</p>
+            <p class="cp-service-desc">We develop a prioritized AI strategy with concrete next steps, helping your team understand the tradeoffs and sequence work in the right order.</p>
+        </div>
+
+        <div class="cp-service-row">
+            <p class="cp-service-title text">Process Automation Consulting</p>
+            <p class="cp-service-desc">We identify repetitive, time-consuming tasks that are strong candidates for AI-assisted or full automation, and outline how to get there.</p>
+        </div>
+
+        <div class="cp-service-row">
+            <p class="cp-service-title text">Data &amp; Analytics Consulting</p>
+            <p class="cp-service-desc">From pipeline design to dashboard strategy, we help organizations make better decisions by getting more out of the data they already have.</p>
+        </div>
+
+        <div class="cp-service-row">
+            <p class="cp-service-title text">Implementation Support</p>
+            <p class="cp-service-desc">Where appropriate, we help your team adopt new tools, build internal understanding, and measure the outcomes of AI initiatives after launch.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- WHY US -->
+<div class="cp-why-section">
+    <p class="wwd-section-label text">Why Choose Us</p>
+    <h2 class="cp-section-title text">The student org advantage.</h2>
+    <div class="cp-why-grid">
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">No Billable Hours</p>
+            <p class="cp-why-body">We don't charge by the hour. Our engagements are structured around outcomes, not invoices — making serious consulting accessible to organizations of any size.</p>
+        </div>
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">Current AI Knowledge</p>
+            <p class="cp-why-body">Our members are immersed in the latest AI research, tools, and discourse. We're not working off a five-year-old playbook — we're learning this in real time.</p>
+        </div>
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">High Motivation</p>
+            <p class="cp-why-body">Every project is a portfolio piece for our members. We bring genuine enthusiasm and a strong personal stake in doing good work — because our reputation depends on it.</p>
+        </div>
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">Diverse Perspectives</p>
+            <p class="cp-why-body">Our team spans computer science, data science, business, and engineering. The best AI strategies are built by people who can see the full picture.</p>
+        </div>
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">Low Friction Engagement</p>
+            <p class="cp-why-body">No contracts, no procurement processes, no NDAs by default. We move fast and keep things simple so you can focus on the problem, not the paperwork.</p>
+        </div>
+
+        <div class="cp-why-card">
+            <p class="cp-why-head text gold">Purdue Network</p>
+            <p class="cp-why-body">Backed by one of the nation's top engineering and technology universities, our work is grounded in academic rigor and access to cutting-edge research.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- FAQ -->
+<div class="cp-faq-section">
+    <p class="wwd-section-label text">FAQ</p>
+    <h2 class="cp-section-title text">Common questions.</h2>
+    <div class="cp-faq-list">
+
+        <div class="cp-faq-item">
+            <p class="cp-faq-q text">How long does a typical engagement take?</p>
+            <p class="cp-faq-a">Most projects run 4–8 weeks depending on scope. We'll agree on a timeline upfront and check in regularly to make sure we're on track.</p>
+        </div>
+
+        <div class="cp-faq-item">
+            <p class="cp-faq-q text">Do you charge for your services?</p>
+            <p class="cp-faq-a">No. As a student organization, our consulting services are provided at no cost. We ask only for your time, access to relevant information, and honest feedback on our work.</p>
+        </div>
+
+        <div class="cp-faq-item">
+            <p class="cp-faq-q text">What do you need from us to get started?</p>
+            <p class="cp-faq-a">Just a brief conversation. We'll ask about your goals, current setup, and any specific pain points. From there we scope the project together.</p>
+        </div>
+
+        <div class="cp-faq-item">
+            <p class="cp-faq-q text">What if we don't know where AI fits yet?</p>
+            <p class="cp-faq-a">That's exactly where we can help. An AI readiness assessment is often the best first step — it gives you a clear map of opportunities before committing to anything.</p>
+        </div>
+
+        <div class="cp-faq-item">
+            <p class="cp-faq-q text">Can you build software or tools for us?</p>
+            <p class="cp-faq-a">Our primary focus is strategy and consulting, not development. We can design a solution and help you understand what to build — but we'll be upfront if implementation is outside our scope.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- CTA -->
+<div class="promotion-div cp-cta-section" id="cp-contact">
+    <div class="cp-cta-inner">
+        <p class="promotion-text gold text">
+            <span class="block">Want to work with us?</span>
+        </p>
+        <p class="cp-cta-sub">Reach out and let's start a conversation.</p>
+        <a href="mailto:purduepioneers@gmail.com">
+            <button class="application-button text cp-cta-btn">purduepioneers@gmail.com</button>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

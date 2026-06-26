@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}What We Do{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/what_we_do.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="header-div">
+    <div class="club-name text inline">
+        <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+    </div>
+    <div class="header-options inline">
+        <a class="text header-links" href="/">Home</a>
+        <a class="text header-links" href="/about">About</a>
+        <a class="text header-links" href="/what-we-do">What We Do</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
+    </div>
+</div>
+
+
+<!-- MISSION STATEMENT -->
+<div class="wwd-mission-section">
+    <p class="wwd-label text gold">Our Mission</p>
+    <h1 class="wwd-mission-text hero-text">
+        Empowering businesses and organizations by bridging the gap between
+        <span class="gold italize">AI research</span> and real-world application.
+    </h1>
+</div>
+
+
+<!-- CORE PILLARS -->
+<div class="wwd-pillars-section">
+    <div class="wwd-pillars-left">
+        <p class="wwd-pillars-label text">The Pillars</p>
+    </div>
+    <div class="wwd-pillars-right">
+
+        <div class="wwd-pillar-row">
+            <div class="wwd-pillar-body">
+                <h2 class="wwd-pillar-title text"><span class="gold">L</span>earn</h2>
+                <p class="wwd-pillar-desc">
+                    We invest in our members through case workshops, guest speakers, and
+                    hands-on exposure to AI tools and frameworks — building a team that
+                    knows both the technology and the business context it operates in.
+                </p>
+            </div>
+        </div>
+
+        <div class="wwd-pillar-row">
+            <div class="wwd-pillar-body">
+                <h2 class="wwd-pillar-title text"><span class="gold">E</span>xplore</h2>
+                <p class="wwd-pillar-desc">
+                    We push beyond textbooks. Our members research emerging AI trends,
+                    audit existing systems for improvement opportunities, and test ideas
+                    before committing them to a client's roadmap.
+                </p>
+            </div>
+        </div>
+
+        <div class="wwd-pillar-row">
+            <div class="wwd-pillar-body">
+                <h2 class="wwd-pillar-title text"><span class="gold">A</span>ction</h2>
+                <p class="wwd-pillar-desc">
+                    Placeholder text — to be updated.
+                </p>
+            </div>
+        </div>
+
+        <div class="wwd-pillar-row">
+            <div class="wwd-pillar-body">
+                <h2 class="wwd-pillar-title text"><span class="gold">D</span>eliver</h2>
+                <p class="wwd-pillar-desc">
+                    Everything we learn and explore ultimately serves one goal — delivering
+                    real, measurable results. We take ownership of our recommendations
+                    and hold ourselves accountable to the outcomes we promise.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- HOW WE WORK -->
+<div class="wwd-how-section">
+    <div class="wwd-how-left">
+        <p class="wwd-label text gold">How We Work</p>
+        <h2 class="wwd-how-title text">From problem to solution — with intention.</h2>
+    </div>
+    <div class="wwd-how-right">
+        <div class="wwd-step">
+            <span class="wwd-step-num gold">1</span>
+            <div>
+                <p class="wwd-step-title text">Discovery</p>
+                <p class="wwd-step-desc">We start by listening. We meet with clients to understand their goals, constraints, and existing infrastructure before suggesting anything.</p>
+            </div>
+        </div>
+        <div class="wwd-step">
+            <span class="wwd-step-num gold">2</span>
+            <div>
+                <p class="wwd-step-title text">Research & Analysis</p>
+                <p class="wwd-step-desc">Our team researches the landscape — what AI capabilities exist, what has worked in similar contexts, and what the data actually supports.</p>
+            </div>
+        </div>
+        <div class="wwd-step">
+            <span class="wwd-step-num gold">3</span>
+            <div>
+                <p class="wwd-step-title text">Strategy & Recommendation</p>
+                <p class="wwd-step-desc">We develop a clear, actionable recommendation grounded in evidence — not hype. We present tradeoffs honestly and let clients make informed decisions.</p>
+            </div>
+        </div>
+        <div class="wwd-step">
+            <span class="wwd-step-num gold">4</span>
+            <div>
+                <p class="wwd-step-title text">Implementation Support</p>
+                <p class="wwd-step-desc">Where appropriate, we assist with the rollout — helping teams understand the tools, adopt new workflows, and measure outcomes.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- IMPACT / USE CASES -->
+<div class="wwd-impact-section">
+    <p class="wwd-label text gold">Impact &amp; Use Cases</p>
+    <h2 class="wwd-impact-title text">How we help organizations.</h2>
+    <div class="wwd-impact-grid">
+        <div class="wwd-impact-card">
+            <!-- <p class="wwd-impact-icon">&#128202;</p> -->
+            <p class="wwd-impact-head text">Data Pipeline Optimization</p>
+            <p class="wwd-impact-body">Helped a local business reduce manual reporting time by automating data collection and visualization with AI-assisted tooling.</p>
+        </div>
+        <div class="wwd-impact-card">
+            <!-- <p class="wwd-impact-icon">&#129302;</p> -->
+            <p class="wwd-impact-head text">AI Readiness Audits</p>
+            <p class="wwd-impact-body">Assessed an organization's current processes and identified where AI could realistically create value — and where it could not.</p>
+        </div>
+        <div class="wwd-impact-card">
+            <!-- <p class="wwd-impact-icon">&#128172;</p> -->
+            <p class="wwd-impact-head text">Customer Experience Strategy</p>
+            <p class="wwd-impact-body">Designed an AI-assisted communication framework to improve response consistency and reduce support overhead for a growing startup.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- WHY JOIN US -->
+<div class="wwd-why-section">
+    <p class="wwd-label text gold">Why Join Us</p>
+    <!-- <h2 class="wwd-why-title text">More than a club. A launchpad.</h2> -->
+    <div class="wwd-why-grid">
+        <div class="wwd-why-item">
+            <p class="wwd-why-head text">Real Client Work</p>
+            <p class="wwd-why-body">You won't just study case studies — you'll run them. From your first semester, you'll work alongside a real client on a real problem.</p>
+        </div>
+        <div class="wwd-why-item">
+            <p class="wwd-why-head text">Interdisciplinary Team</p>
+            <p class="wwd-why-body">Our members come from CS, data science, business, and engineering. The best AI solutions come from diverse perspectives working together.</p>
+        </div>
+        <div class="wwd-why-item">
+            <p class="wwd-why-head text">Mentorship & Growth</p>
+            <p class="wwd-why-body">Founders mentor every project team, and we invest in training so that every member grows — regardless of their starting point.</p>
+        </div>
+        <div class="wwd-why-item">
+            <p class="wwd-why-head text">Portfolio That Speaks</p>
+            <p class="wwd-why-body">Walk away with documented case work, measurable results, and the kind of experience that stands out on any resume or application.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- WHAT WE DON'T DO -->
+<div class="wwd-dont-section">
+    <p class="wwd-label text gold">Our Principles</p>
+    <h2 class="wwd-dont-title text">What we don't do.</h2>
+    <div class="wwd-dont-grid">
+        <div class="wwd-dont-card">
+            <p class="wwd-dont-x">&#10005;</p>
+            <p class="wwd-dont-head text">Replace Human Judgment</p>
+            <p class="wwd-dont-body">AI is a tool, not a decision-maker. We always ensure a human understands, reviews, and owns every recommendation we make.</p>
+        </div>
+        <div class="wwd-dont-card">
+            <p class="wwd-dont-x">&#10005;</p>
+            <p class="wwd-dont-head text">Treat AI as Magic</p>
+            <p class="wwd-dont-body">We don't overpromise. We're honest about what AI can and cannot do, and we push back on unrealistic expectations — even from clients.</p>
+        </div>
+        <div class="wwd-dont-card">
+            <p class="wwd-dont-x">&#10005;</p>
+            <p class="wwd-dont-head text">Build Without Ethics</p>
+            <p class="wwd-dont-body">We don't build tools without thinking about ethics, fairness, and usefulness. Every solution is stress-tested for unintended consequences before it leaves our hands.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- CALL TO ACTION -->
+
+
+{% endblock %}

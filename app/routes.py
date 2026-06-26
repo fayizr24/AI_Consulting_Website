@@ -20,5 +20,5 @@ def get_clients_page():
 
 @main.route("/what-we-do")
 def get_team_page():
-    return render_template("team.html")
+    return render_template("what_we_do.html")
 

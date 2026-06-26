@@ -3,20 +3,24 @@
 {% block title %}About Us{% endblock %}
 
 
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
 {% block content %}
 
 <div class="header-div">
 
     <div class="club-name text inline">
-        <h2>AI Consulting Club</h2>
-    </div> 
+        <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+    </div>
 
     <div class="header-options inline">
-        <a class="text header-links" href="about.html">About</a>
-        <a class="text header-links" href="team.html">What We Do</a>
-        <a class="text header-links" href="portfolio.html">Portfolio</a>
-        <a class="text header-links" href="students_page.html"><span class="gold">For Students</span></a>
-        <a class="text header-links" href="clients_page.html"><span class="gold">For Clients</span></a>
+        <a class="text header-links" href="/">Home</a>
+        <a class="text header-links" href="/about">About</a>
+        <a class="text header-links" href="/what-we-do">What We Do</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
     </div>
 
 </div>
@@ -40,67 +44,6 @@
 </div>
 
 
-
-
-<div class="timeline-div">
-    <div class="timeline-line"></div>
-    <div class="spot-container">
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Applications Open</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Coffee Chats</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Callout #1</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Callout #2</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Applications Close</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Behavioural (R1)</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Case (R2)</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Final</p>
-        </div>
-    </div>
-
-    <!-- <div class="tag-container">
-        <p class="tag text">Apps Open</p>
-        <p class="tag text">Coffee Chats</p>
-        <p class="tag text">Callout #1</p>
-        <p class="tag text">Callout #2</p>
-        <p class="tag text">Apps Close</p>
-        <p class="tag text">Behavioural (R1)</p>
-        <p class="tag text">Case (R2)</p>
-        <p class="tag text">Final</p>
-    </div> -->
-    
-    
-
-</div>
 
 {% endblock %}
 

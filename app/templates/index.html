@@ -3,17 +3,22 @@
 {% block title %}AI Consulting Club{% endblock %}
 
 
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
 {% block content %}
 <div class="header-div">
 
     <div class="club-name text inline">
-        <h2>AI Consulting Club</h2>
+        <!-- <h2>AI Consulting Club</h2> -->
+         <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
     </div> 
 
     <div class="header-options inline">
+        <a class="text header-links" href="/">Home</a>
         <a class="text header-links" href="/about">About</a>
         <a class="text header-links" href="/what-we-do">What We Do</a>
-        <a class="text header-links" href="/portfolio">Portfolio</a>
         <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
         <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
     </div>
@@ -25,25 +30,32 @@
     
     <div class="hero-container">
     
-        <div class="hero-left-container">
-        <p class="founded-text text charcoal">Purdue University | Founded in 2026</p>
+        <div class="left-container">
+            <div class="hero-left-container">
+                <p class="founded-text text charcoal">Purdue University | Founded in 2026</p>
+            
+                <p class="text hero-text">Where AI meets</p>
+                <p class="text hero-text"><span class="gold italize">real-world</span> strategy...</p>
+            
+                <p class="main-description">
+                    <span>We are Purdue's first AI focused student-run consluting club that focuses on</span>
+                    <span>real client interactions to deliver AI-powered solutions and create measurable</span>
+                    <span>impact on investment.</span>
+                </p>
     
-        <p class="text hero-text">Where AI meets</p>
-        <p class="text hero-text"><span class="gold italize">real-world</span> strategy...</p>
+                <p class="main-description">
+                    <span class="application-text">Now accepting applications for Fall 2026!</span>
+                </p>
     
-        <p class="main-description">
-            <span>We are Purdue's first AI focused student-run consluting club that focuses on</span>
-            <span>real client interactions to deliver AI-powered solutions and create measurable</span>
-            <span>impact on investment.</span>
-        </p>
+            </div>
 
-        <p class="main-description">
-            <span class="application-text">Now accepting applications for Fall 2026!</span>
-        </p>
+            <div class="arrow-div">
+                <div class="down-arrow"></div>
+            </div>
+        </div>
 
-    </div>
     
-    <div class="hero-right-container">
+        <div class="hero-right-container">
         <img src="{{ url_for('static', filename='images/purdue_pic.jpg') }}" class="purdue-pic">
         </div>
     </div>
@@ -83,7 +95,7 @@
 
 
 
-<div class="main-meet-team-div" id="main-meet-team-div">
+<!-- <div class="main-meet-team-div" id="main-meet-team-div">
     <div class="meet-team-text text hidden-transition hide-transition">
         Meet the Team!
     </div>
@@ -93,7 +105,7 @@
         <div id="team-div-fabian" class="person-card"></div>
         <div id="team-div-fayiz" class="person-card"></div>
     </div>
-</div>
+</div> -->
 
 
 

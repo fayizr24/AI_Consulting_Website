@@ -1,29 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}About Us{% endblock %}
+{% block title %}For Students{% endblock %}
 
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/students_page.css') }}">
+{% endblock %}
 
 {% block content %}
 
 <div class="header-div">
 
     <div class="club-name text inline">
-        <h2>AI Consulting Club</h2>
-    </div> 
+        <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+    </div>
 
     <div class="header-options inline">
-        <a class="text header-links" href="about.html">About</a>
-        <a class="text header-links" href="team.html">What We Do</a>
-        <a class="text header-links" href="portfolio.html">Portfolio</a>
-        <a class="text header-links" href="students_page.html"><span class="gold">For Students</span></a>
-        <a class="text header-links" href="clients_page.html"><span class="gold">For Clients</span></a>
+        <a class="text header-links" href="/">Home</a>
+        <a class="text header-links" href="/about">About</a>
+        <a class="text header-links" href="/what-we-do">What We Do</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
     </div>
 
 </div>
 
-<h2 class="for-students-header hero-text">
-    Recruiting Process
-</h2>
+
+<!-- RECRUITING PROCESS HEADER -->
+<div class="fs-process-header">
+    <p class="wwd-section-label text how-to-join-text">How to Join</p>
+    <h2 class="hero-text fs-process-title">Recruiting Process</h2>
+</div>
 
 <div class="timeline">
     <div class="left-timeline-div">
@@ -70,6 +77,7 @@
         <div class="timeline-dot" style="top: 1150px;"></div>
         <div class="timeline-dot" style="top: 1350px;"></div>
         <div class="timeline-dot" style="top: 1550px;"></div>
+        <div class="timeline-dot" style="top: 1750px;"></div>
 
     </div>
     <div class="right-timeline-div">
@@ -100,8 +108,18 @@
     </div>
 </div>
 
-<div class="finished text">Final Decision!</div>
+<div class="fs-finished-section">
+    <div class="fs-finished-dot"></div>
+    <p class="fs-finished-label text gold">End of Process</p>
+    <p class="fs-finished-title text">Final Decision!</p>
+</div>
 
-
+<div class="promotion-div">
+    <p class="promotion-text gold text inline">
+        <span class="block">Ready to Solve</span>
+        <span>Problems with AI?</span>
+    </p>
+    <button class="application-button text inline">Apply Here</button>
+</div>
 
 {% endblock %}

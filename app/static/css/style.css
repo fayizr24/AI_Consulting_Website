@@ -133,6 +133,14 @@ a:visited {
 
 .club-name {
     font-size: 20px;
+    margin-right: 20px;
+    margin-left: -20px;
+}
+
+.club-logo {
+    height: 188px;
+    width: auto;
+    margin-right: 50px;
 }
 
 .header-options {
@@ -200,17 +208,35 @@ a:visited {
 .hero-right-container {
     display: flex;
     align-items: right;
+    margin-right: -200px;
+    margin-left: 200px;
     width: 500px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .purdue-pic {
     margin: 0px;
     padding: 0px;
-    margin-left: 200px;
-    margin-right: 0px;
+    margin-left: 300px;
+    margin-bottom: 0px;
     width: 530px;
     height: 580px;
     box-shadow: 0px 0px 100px #F7F7F5;
+}
+
+.arrow-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.down-arrow {
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform: rotate(45deg);
 }
 
 
@@ -222,7 +248,7 @@ a:visited {
 .valuable-facts {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 100%;
 }
 
@@ -277,9 +303,10 @@ a:visited {
 }
 
 .promotion-text {
-    margin-left: 20px;
+    margin-left: 100px;
     font-weight: bold;
     color: white;
+
 }
 
 .application-button {
@@ -394,6 +421,11 @@ a:visited {
 
 /* --- Vertical timeline --- */
 
+.how-to-join-text {
+    font-weight: bold;
+}
+
+
 .timeline {
     display: flex;
     flex-direction: row;
@@ -418,13 +450,14 @@ a:visited {
 /* Thin center column that holds the vertical line */
 .middle-line-div {
     margin-top: 60px;
-    height: 1500px;
+    height: 1400px;
     width: 5%;
     display: flex;
     justify-content: center;
 }
 
 .middle-line {
+    margin-top: 30px;
     background-color: #000000;
     height: 1400px;
     width: 8px;
@@ -465,6 +498,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    margin-top: 30px;
 }
 
 /* --- Horizontal timeline --- */
@@ -527,7 +561,6 @@ a:visited {
 
 /* ============================================================
    11. FOR STUDENTS
-   Recruitment section header
    ============================================================ */
 
 .for-students-header {
@@ -537,11 +570,615 @@ a:visited {
     align-items: center;
 }
 
+/* Hero banner */
+.fs-hero {
+    padding: 100px 10% 80px;
+    max-width: 860px;
+    border-bottom: 1px solid #8888883e;
+}
+
+.fs-hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 12px 0 24px;
+}
+
+.fs-hero-sub {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    max-width: 620px;
+    margin: 0;
+}
+
+/* "How to Join / Recruiting Process" label + heading */
+.fs-process-header {
+    padding: 60px 10% 20px;
+}
+
+.fs-process-title {
+    font-size: 48px;
+    margin: 8px 0 0;
+}
+
+/* Final Decision section */
+.fs-finished-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 8% 20px;
+    text-align: center;
+}
+
+.fs-finished-dot {
+    width: 18px;
+    height: 18px;
+    background: #B8922A;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 2px;
+
+}
+
+.fs-finished-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+}
+
+.fs-finished-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 16px;
+}
+
+.fs-finished-sub {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    max-width: 500px;
+    margin: 0;
+}
+
 
 /* ============================================================
    12. GLASS CARD
    Frosted-glass effect used for floating info panels
    ============================================================ */
+
+/* ============================================================
+   13. WHAT WE DO PAGE
+   ============================================================ */
+
+/* Shared section label (small caps above each section heading) */
+.wwd-section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B8922A;
+    margin-bottom: 10px;
+}
+
+/* ---- Mission ---- */
+.wwd-mission-section {
+    padding: 120px 10% 100px;
+    max-width: 900px;
+}
+
+.wwd-label {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.wwd-mission-text {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* ---- Core Pillars ---- */
+.wwd-pillars-section {
+    background-color: #1a1a1a;
+    color: #f0ede8;
+    padding: 10px 8%;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.wwd-pillars-left {
+    flex: 0 0 220px;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.wwd-pillars-label {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B8922A;
+    margin: 0;
+    margin-top: 275px;
+    white-space: nowrap;
+}
+
+.wwd-pillars-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.wwd-pillar-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 36px 0;
+    border-bottom: 1px solid #333;
+}
+
+.wwd-pillar-row:last-child {
+    
+    border-bottom: none;
+}
+
+.wwd-pillar-number {
+    font-size: 36px;
+    font-family: Georgia, serif;
+    flex-shrink: 0;
+    padding-top: 6px;
+    width: 28px;
+    margin-bottom: 20px;
+}
+
+.wwd-pillar-body {
+    flex: 1;
+}
+
+.wwd-pillar-title .gold {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.wwd-pillar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0ede8;
+    margin: 0 0 12px;
+}
+
+.wwd-pillar-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- How We Work ---- */
+.wwd-how-section {
+    display: flex;
+    gap: 80px;
+    padding: 100px 8%;
+    border-bottom: 1px solid #8888883e;
+}
+
+.wwd-how-left {
+    flex: 0 0 280px;
+}
+
+.wwd-how-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 16px;
+    line-height: 1.3;
+}
+
+.wwd-how-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wwd-step {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.wwd-step-num {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.wwd-step-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 6px;
+}
+
+.wwd-step-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- Impact / Use Cases ---- */
+.wwd-impact-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.wwd-impact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 50px;
+}
+
+.wwd-impact-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.wwd-impact-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.wwd-impact-icon {
+    font-size: 36px;
+    margin: 0 0 16px;
+}
+
+.wwd-impact-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.wwd-impact-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- Why Join Us ---- */
+.wwd-why-section {
+    padding: 100px 8%;
+    border-bottom: 1px solid #8888883e;
+}
+
+.wwd-why-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 50px;
+}
+
+.wwd-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+}
+
+.wwd-why-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.wwd-why-body {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- What We Don't Do ---- */
+.wwd-dont-section {
+    background-color: #1a1a1a;
+    color: #f0ede8;
+    padding: 60px 8%;
+}
+
+.wwd-dont-section .wwd-section-label {
+    color: #B8922A;
+}
+
+.wwd-dont-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f0ede8;
+    margin: 10px 0 50px;
+}
+
+.wwd-dont-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.wwd-dont-card {
+    flex: 1;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 36px 28px;
+}
+
+.wwd-dont-x {
+    font-size: 22px;
+    color: #B8922A;
+    margin: 0 0 14px;
+}
+
+.wwd-dont-head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0ede8;
+    margin: 0 0 12px;
+    font-size: 24px;
+}
+
+.wwd-dont-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- CTA ---- */
+.wwd-cta-section {
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+
+/* ============================================================
+   14. CLIENTS PAGE
+   ============================================================ */
+
+/* ---- Hero ---- */
+.cp-hero {
+    padding: 120px 10% 100px;
+    max-width: 860px;
+}
+
+.cp-hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 12px 0 24px;
+}
+
+.cp-hero-sub {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    max-width: 620px;
+    margin: 0 0 36px;
+}
+
+.cp-hero-btn {
+    width: 180px;
+    margin-left: 0;
+}
+
+/* ---- Shared section heading ---- */
+.cp-section-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 8px 0 48px;
+}
+
+/* ---- Clients We Help ---- */
+.cp-clients-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.cp-clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cp-client-card {
+    flex: 1 1 260px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px 26px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+}
+
+.cp-client-icon {
+    font-size: 34px;
+    margin: 0 0 14px;
+}
+
+.cp-client-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.cp-client-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- Services ---- */
+.cp-services-section {
+    background-color: #1a1a1a;
+    color: #f0ede8;
+    padding: 100px 8%;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.cp-services-left {
+    flex: 0 0 260px;
+}
+
+.cp-services-note {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin-top: 16px;
+}
+
+.cp-services-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-service-row {
+    padding: 32px 0;
+    border-top: 1px solid #333;
+}
+
+.cp-service-row:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.cp-service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0ede8;
+    margin: 0 0 10px;
+}
+
+.cp-service-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- Why Us ---- */
+.cp-why-section {
+    padding: 100px 8%;
+    border-bottom: 1px solid #8888883e;
+}
+
+.cp-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.cp-why-card {
+    border-top: 2px solid #B8922A;
+    padding-top: 24px;
+}
+
+.cp-why-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.cp-why-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- FAQ ---- */
+.cp-faq-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.cp-faq-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+}
+
+.cp-faq-item {
+    padding: 28px 0;
+    border-top: 1px solid #ccc;
+}
+
+.cp-faq-item:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.cp-faq-q {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.cp-faq-a {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* ---- CTA ---- */
+.cp-cta-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding: 60px 8%;
+}
+
+.cp-cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.cp-cta-sub {
+    font-size: 18px;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+.cp-cta-btn {
+    width: 320px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 8px;
+}
 
 .glass {
     background-color: rgba(255, 255, 255, 0.627);
