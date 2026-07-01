@@ -6,7 +6,7 @@ main = Blueprint("main", __name__)
 def home():
     return render_template("index.html")
 
-@main.route("/about")
+@main.route("/our-team")
 def about():
     return render_template("about.html")
 
@@ -18,7 +18,7 @@ def get_students_page():
 def get_clients_page():
     return render_template("clients_page.html")
 
-@main.route("/what-we-do")
+@main.route("/about-us")
 def get_team_page():
     return render_template("what_we_do.html")
 
