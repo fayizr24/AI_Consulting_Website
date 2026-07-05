@@ -2,21 +2,7 @@
    ABOUT PAGE STYLES
    ============================================================ */
 
-/* ---- Team / Founders ---- */
-.about-header {
-    font-family: Georgia, serif;
-    font-size: 40px;
-}
-
-.info-panel {
-    background: linear-gradient(
-        to bottom,
-        #fffdf8 0%,
-        #f7f3eb 50%,
-        #e9e3d8 100%
-    );
-}
-
+/* ---- Founders Header ---- */
 .about-founders-div {
     margin-top: 50px;
     display: flex;
@@ -24,7 +10,9 @@
     font-size: 44px;
 }
 
-.main-meet-the-team-div {
+
+/* ---- Team Grid ---- */
+.main-meet-team-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,12 +27,14 @@
 }
 
 .person-card {
+    position: relative;
     margin: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 331px;
+    height: 300px;
     width: 300px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .headshot-pic {
@@ -53,16 +43,56 @@
     border-radius: inherit;
 }
 
+
+/* ---- Profile Info Panel ---- */
+
+/* Warm gradient panel that sits behind a profile info bar */
+.info-panel {
+    background: linear-gradient(
+        to bottom,
+        #fffdf8 0%,
+        #f7f3eb 50%,
+        #e9e3d8 100%
+    );
+}
+
+/* Name/role card overlaid on the bottom of a headshot */
 .profile-info-bar {
     position: absolute;
     z-index: 10;
-    border-radius: 20px;
+    border-radius: 14px;
     height: 100px;
-    width: 180px;
-    top: 200px;
-    left: 60px;
+    width: 220px;
+    top: 184px;
+    left: 40px;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
+.profile-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D2D2D;
+    line-height: 1.2;
+}
+
+.profile-role {
+    margin: 0;
+    font-size: 16.5px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+    color: #B8922A;
+    letter-spacing: 0.3px;
+}
+
+/* Dark overlay panel covering the full card on hover */
 .profile-info-div {
     position: absolute;
     top: 0px;
@@ -73,56 +103,4 @@
     width: inherit;
     border-radius: 10px;
     pointer-events: none;
-}
-
-
-/* ---- Horizontal Timeline ---- */
-.timeline-div {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-.timeline-line {
-    width: 2500px;
-    height: 5px;
-    background-color: black;
-    z-index: 10;
-    margin: auto;
-}
-
-.spot-container {
-    display: flex;
-    position: relative;
-    bottom: 68px;
-}
-
-.spot {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.tag-container {
-    display: flex;
-}
-
-.tag {
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.single-spot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.circle {
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    background-color: black;
 }

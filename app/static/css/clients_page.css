@@ -2,67 +2,8 @@
    CLIENTS PAGE STYLES
    ============================================================ */
 
-/* ---- Promotion / CTA Banner ---- */
-.promotion-div {
-    margin-top: 15px;
-    background-color: #000000;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 50px;
-}
-
-.promotion-text {
-    margin-left: 100px;
-    font-weight: bold;
-    color: white;
-}
-
-.application-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1d1c1c;
-    border-radius: 10px;
-    color: #B8922A;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    margin-left: 400px;
-}
-
-.application-button:hover {
-    cursor: pointer;
-}
-
-
-/* ---- Shared WWD Utilities used on this page ---- */
-.wwd-label {
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-
-.wwd-section-label {
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #B8922A;
-    margin-bottom: 10px;
-}
-
-.wwd-how-left {
-    flex: 0 0 300px;
-}
-
-.wwd-cta-section {
-    justify-content: center;
-    gap: 60px;
-    text-align: center;
+.black {
+    color: black;
 }
 
 
@@ -93,7 +34,7 @@
 }
 
 
-/* ---- Shared section heading ---- */
+/* ---- Shared Section Heading ---- */
 .cp-section-title {
     font-size: 38px;
     font-weight: bold;
@@ -101,65 +42,125 @@
 }
 
 
-/* ---- Clients We Help ---- */
-.cp-clients-section .cp-service-row {
-    border-top: none;
-    border-bottom: none;
-}
-
-.cp-clients-section {
-    background-color: #e8e8e4;
-    color: #000000;
-    padding: 100px 8%;
+/* ---- Slanted Split Section: Clients We Help + Why Choose Us ---- */
+.cp-slant-section {
+    position: relative;
     display: flex;
-    gap: 80px;
-    align-items: flex-start;
+    min-height: 700px;
+    background-color: #E8E8E4;
+    overflow: hidden;
 }
 
-.cp-clients-section .cp-services-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 40px;
-}
-
-.cp-clients-grid {
+.cp-slant-panel {
+    position: relative;
+    flex: 1 1 50%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
 }
 
-.cp-client-card {
-    flex: 1 1 260px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 32px 26px;
-    box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+/* Dark trapezoid, slanted edge facing right into the other panel */
+.cp-slant-left {
+    background-color: #1a1a1a;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+    margin-right: -10%;
+    z-index: 1;
 }
 
-.cp-client-icon {
-    font-size: 34px;
-    margin: 0 0 14px;
+/* Cream trapezoid, slanted edge facing left into the other panel */
+.cp-slant-right {
+    background-color: #f0ede8;
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.cp-client-head {
-    font-size: 18px;
+.cp-slant-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cp-slant-content-left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #f0ede8;
+    width: 100%;
+    padding: 100px 6% 60px 8%;
+    margin-left: 180px;
+}
+
+.cp-slant-right .cp-slant-content {
+    width: 100%;
+    padding: 100px 8% 60px 28%;
+}
+
+/* Keeps both panel labels aligned at the same height */
+.cp-slant-content-left .wwd-section-label,
+.cp-slant-right .cp-slant-content .wwd-section-label {
+    font-size: 30px;
+}
+
+.cp-slant-title {
+    font-size: clamp(26px, 2.6vw, 36px);
     font-weight: bold;
-    margin: 0 0 10px;
+    line-height: 1.2;
+    margin: 10px 0 30px;
 }
 
-.cp-client-body {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #555;
-    font-family: Calibri, sans-serif;
-    margin: 0;
+.cp-slant-right-title {
+    color: #1a1a1a;
+}
+
+.cp-slant-list {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cp-slant-list li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0ede8;
+    padding-left: 26px;
+    position: relative;
+}
+
+.cp-slant-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+}
+
+.cp-slant-why-list li {
+    font-size: 20px;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .cp-slant-section {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .cp-slant-panel {
+        clip-path: none !important;
+        margin-right: 0 !important;
+    }
+
+    .cp-slant-content-left,
+    .cp-slant-right .cp-slant-content {
+        padding: 60px 8%;
+        margin-left: 0;
+    }
 }
 
 
 /* ---- Services ---- */
 .cp-services-section {
     background-color: #e8e8e4;
-    /* color: #000000; */
     padding: 100px 8%;
     display: flex;
     gap: 80px;
@@ -186,11 +187,6 @@
 
 .cp-service-row {
     padding: 32px 0;
-    /* border-top: 1px solid #333; */
-}
-
-.cp-service-row:last-child {
-    /* border-bottom: 1px solid #333; */
 }
 
 .cp-service-title {
@@ -212,7 +208,6 @@
 /* ---- Why Us ---- */
 .cp-why-section {
     padding: 100px 8%;
-    /* border-bottom: 1px solid #8888883e; */
 }
 
 .cp-why-grid {
@@ -308,6 +303,12 @@
 
 
 /* ---- CTA ---- */
+
+.cp-cta-section .promotion-text {
+    margin-left: 0;
+    text-align: center;
+}
+
 .cp-cta-section {
     flex-direction: column;
     justify-content: center;
@@ -320,6 +321,9 @@
 .cp-cta-inner {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 16px;
 }
@@ -336,4 +340,49 @@
     font-size: 16px;
     margin-left: 0;
     margin-top: 8px;
+}
+
+
+/* ---- Impact / Use Cases ---- */
+.wwd-impact-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.wwd-impact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 50px;
+}
+
+.wwd-impact-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.wwd-impact-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.wwd-impact-icon {
+    font-size: 36px;
+    margin: 0 0 16px;
+}
+
+.wwd-impact-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.wwd-impact-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
 }

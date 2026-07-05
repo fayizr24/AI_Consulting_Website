@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "flask-dev",
+      "runtimeExecutable": "C:\\Users\\fazet\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+      "runtimeArgs": ["run.py"],
+      "port": 5050
+    }
+  ]
+}
