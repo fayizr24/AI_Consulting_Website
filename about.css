@@ -1,4 +1,106 @@
-.about-header {
-    font-family: Georgia, serif;
-    font-size: 40px;
+/* ============================================================
+   ABOUT PAGE STYLES
+   ============================================================ */
+
+/* ---- Founders Header ---- */
+.about-founders-div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+
+/* ---- Team Grid ---- */
+.main-meet-team-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person-card {
+    position: relative;
+    margin: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.headshot-pic {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+
+/* ---- Profile Info Panel ---- */
+
+/* Warm gradient panel that sits behind a profile info bar */
+.info-panel {
+    background: linear-gradient(
+        to bottom,
+        #fffdf8 0%,
+        #f7f3eb 50%,
+        #e9e3d8 100%
+    );
+}
+
+/* Name/role card overlaid on the bottom of a headshot */
+.profile-info-bar {
+    position: absolute;
+    z-index: 10;
+    border-radius: 14px;
+    height: 100px;
+    width: 220px;
+    top: 184px;
+    left: 40px;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D2D2D;
+    line-height: 1.2;
+}
+
+.profile-role {
+    margin: 0;
+    font-size: 16.5px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+    color: #B8922A;
+    letter-spacing: 0.3px;
+}
+
+/* Dark overlay panel covering the full card on hover */
+.profile-info-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: #1E293B;
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+    pointer-events: none;
 }

@@ -1,0 +1,388 @@
+/* ============================================================
+   CLIENTS PAGE STYLES
+   ============================================================ */
+
+.black {
+    color: black;
+}
+
+
+/* ---- Hero ---- */
+.cp-hero {
+    padding: 120px 10% 100px;
+    max-width: 860px;
+}
+
+.cp-hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 12px 0 24px;
+}
+
+.cp-hero-sub {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    max-width: 620px;
+    margin: 0 0 36px;
+}
+
+.cp-hero-btn {
+    width: 180px;
+    margin-left: 0;
+}
+
+
+/* ---- Shared Section Heading ---- */
+.cp-section-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 8px 0 48px;
+}
+
+
+/* ---- Slanted Split Section: Clients We Help + Why Choose Us ---- */
+.cp-slant-section {
+    position: relative;
+    display: flex;
+    min-height: 700px;
+    background-color: #E8E8E4;
+    overflow: hidden;
+}
+
+.cp-slant-panel {
+    position: relative;
+    flex: 1 1 50%;
+    display: flex;
+}
+
+/* Dark trapezoid, slanted edge facing right into the other panel */
+.cp-slant-left {
+    background-color: #1a1a1a;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+    margin-right: -10%;
+    z-index: 1;
+}
+
+/* Cream trapezoid, slanted edge facing left into the other panel */
+.cp-slant-right {
+    background-color: #f0ede8;
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.cp-slant-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cp-slant-content-left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #f0ede8;
+    width: 100%;
+    padding: 100px 6% 60px 8%;
+    margin-left: 180px;
+}
+
+.cp-slant-right .cp-slant-content {
+    width: 100%;
+    padding: 100px 8% 60px 28%;
+}
+
+/* Keeps both panel labels aligned at the same height */
+.cp-slant-content-left .wwd-section-label,
+.cp-slant-right .cp-slant-content .wwd-section-label {
+    font-size: 30px;
+}
+
+.cp-slant-title {
+    font-size: clamp(26px, 2.6vw, 36px);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0 30px;
+}
+
+.cp-slant-right-title {
+    color: #1a1a1a;
+}
+
+.cp-slant-list {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cp-slant-list li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0ede8;
+    padding-left: 26px;
+    position: relative;
+}
+
+.cp-slant-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+}
+
+.cp-slant-why-list li {
+    font-size: 20px;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .cp-slant-section {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .cp-slant-panel {
+        clip-path: none !important;
+        margin-right: 0 !important;
+    }
+
+    .cp-slant-content-left,
+    .cp-slant-right .cp-slant-content {
+        padding: 60px 8%;
+        margin-left: 0;
+    }
+}
+
+
+/* ---- Services ---- */
+.cp-services-section {
+    background-color: #e8e8e4;
+    padding: 100px 8%;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.cp-services-left {
+    flex: 0 0 260px;
+}
+
+.cp-services-note {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin-top: 16px;
+}
+
+.cp-services-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-service-row {
+    padding: 32px 0;
+}
+
+.cp-service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+.cp-service-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+
+/* ---- Why Us ---- */
+.cp-why-section {
+    padding: 100px 8%;
+}
+
+.cp-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.cp-why-card {
+    border-top: 2px solid #B8922A;
+    padding-top: 24px;
+}
+
+.cp-why-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.cp-why-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+
+/* ---- FAQ ---- */
+.cp-faq-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.cp-faq-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+}
+
+.cp-faq-item {
+    padding: 28px 0;
+    border-top: 1px solid #ccc;
+}
+
+.cp-faq-item:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.cp-faq-q {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.cp-faq-q::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #B8922A;
+    border-bottom: 2px solid #B8922A;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+.cp-faq-item.open .cp-faq-q::after {
+    transform: rotate(-135deg);
+}
+
+.cp-faq-a {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, margin-top 0.35s ease;
+}
+
+.cp-faq-item.open .cp-faq-a {
+    max-height: 300px;
+    margin-top: 14px;
+}
+
+
+/* ---- CTA ---- */
+
+.cp-cta-section .promotion-text {
+    margin-left: 0;
+    text-align: center;
+}
+
+.cp-cta-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding: 60px 8%;
+}
+
+.cp-cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.cp-cta-sub {
+    font-size: 18px;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+.cp-cta-btn {
+    width: 320px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+
+/* ---- Impact / Use Cases ---- */
+.wwd-impact-section {
+    background-color: #f2efe9;
+    padding: 100px 8%;
+}
+
+.wwd-impact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 50px;
+}
+
+.wwd-impact-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.wwd-impact-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.wwd-impact-icon {
+    font-size: 36px;
+    margin: 0 0 16px;
+}
+
+.wwd-impact-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.wwd-impact-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}

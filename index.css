@@ -1,0 +1,113 @@
+/* ============================================================
+   INDEX PAGE STYLES
+   ============================================================ */
+
+/* ---- Hero Section ---- */
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Thin left margin strip to indent main content from the edge */
+.left-spacing {
+    width: 50px;
+}
+
+.founded-text {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Grows to fill the rest of main-container, next to left-spacing */
+.hero-container {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+}
+
+.main-description {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+}
+
+.application-text {
+    margin-left: 180px;
+}
+
+/* Right side of the hero — grows to fill all remaining width */
+.hero-right-container {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.purdue-pic {
+    height: 580px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: bottom right;
+    background-color: transparent;
+    border: none;
+}
+
+.arrow-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.down-arrow {
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform: rotate(45deg);
+}
+
+
+/* ---- Facts Bar ---- */
+.valuable-facts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 100%;
+}
+
+/* Individual stat cell — all cells except the rightmost */
+.fact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 80px;
+    font-size: 18px;
+    border: 1px solid #8888883e;
+    border-left: none;
+    color: #888888;
+    font-family: Calibri, sans-serif;
+}
+
+/* Rightmost stat cell — removes the right border to avoid double border at edge */
+.fact-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 80px;
+    font-size: 18px;
+    border: 1px solid #8888883e;
+    border-left: none;
+    border-right: none;
+    color: #888888;
+    font-family: Calibri, sans-serif;
+}
+
+.fact-number {
+    font-size: 35px;
+}

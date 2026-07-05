@@ -1,0 +1,118 @@
+/* ============================================================
+   FOR STUDENTS PAGE STYLES
+   ============================================================ */
+
+.how-to-join-text {
+    font-weight: bold;
+}
+
+
+/* ---- Recruiting Process Header ---- */
+.fs-process-header {
+    padding: 60px 10% 20px;
+}
+
+.fs-process-title {
+    font-size: 48px;
+    margin: 8px 0 0;
+}
+
+
+/* ---- Vertical Timeline ---- */
+.timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 1500px;
+}
+
+/* Left column — events aligned to the right, abutting the center line */
+.left-timeline-div {
+    width: 47.5%;
+    text-align: right;
+    margin-right: -20px;
+}
+
+/* Right column — events aligned to the left, abutting the center line */
+.right-timeline-div {
+    width: 47.5%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Thin center column that holds the vertical line */
+.middle-line-div {
+    margin-top: 60px;
+    height: 1400px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-line {
+    margin-top: 30px;
+    background-color: #000000;
+    height: 1400px;
+    width: 8px;
+}
+
+/* Circle marker placed on the line at each event */
+.timeline-dot {
+    position: absolute;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    background: #202020;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #181818;
+}
+
+.timeline-content {
+    padding: 18px 22px;
+    width: 90%;
+    height: 80px;
+}
+
+.timeline-header {
+    font-size: 25px;
+    width: inherit;
+    font-weight: bold;
+}
+
+.timeline-text {
+    font-size: 20px;
+    width: inherit;
+}
+
+
+/* ---- Final Decision ---- */
+.fs-finished-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 8% 20px;
+    text-align: center;
+}
+
+.fs-finished-dot {
+    width: 18px;
+    height: 18px;
+    background: #B8922A;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 2px;
+}
+
+.fs-finished-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.fs-finished-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 16px;
+}

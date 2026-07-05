@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+
     <link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="about.css">
+
 </head>
+
 <body>
+    
+    
+    <main>
+        
 
 <div class="header-div">
 
     <div class="club-name text inline">
-        <h2>AI Consulting Club</h2>
-    </div> 
+        <img src="static/images/Club_logo.png" class="club-logo">
+    </div>
 
     <div class="header-options inline">
-        <a class="text header-links" href="about.html">About</a>
-        <a class="text header-links" href="team.html">What We Do</a>
-        <a class="text header-links" href="portfolio.html">Portfolio</a>
+        <a class="text header-links" href="index.html">Home</a>
+        <a class="text header-links" href="about.html">Our Team</a>
+        <a class="text header-links" href="what_we_do.html">About Us</a>
         <a class="text header-links" href="students_page.html"><span class="gold">For Students</span></a>
         <a class="text header-links" href="clients_page.html"><span class="gold">For Clients</span></a>
     </div>
@@ -33,6 +41,11 @@
     <div class="team-div" id="team-div">
         <div id="team-div-jiya" class="person-card glass">
             <img src="static/images/Jiya_picture.jpeg" class="headshot-pic">
+            <div id="info-panel-jiya" class="profile-info-bar info-panel">
+                <p class="profile-name text">Jiya Jindal</p>
+                <p class="profile-role">Business Analytics &amp; Information Management</p>
+            </div>
+            <div id="info-div-jiya" class="profile-info-div info-panel hidden-transition"></div>
         </div>
         <div id="team-div-nishant" class="person-card glass"></div>
         <div id="team-div-fabian" class="person-card glass"></div>
@@ -40,51 +53,14 @@
     </div>
 </div>
 
-<div class="timeline-div">
-    <div class="timeline-line"></div>
-    <div class="spot-container">
 
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Applications Open</p>
-        </div>
 
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Coffee Chats</p>
-        </div>
 
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Callout #1</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Callout #2</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Applications Close</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Behavioural (R1)</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Case (R2)</p>
-        </div>
-
-        <div class="single-spot">
-            <div class="circle spot"></div>
-            <p class="tag text">Final</p>
-        </div>
-    </div>
-</div>
+    </main>
+    
+    
+    
+<script src="static/js/fade.js"></script>
 
 </body>
 </html>
