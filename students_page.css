@@ -4,6 +4,7 @@
 
 .how-to-join-text {
     font-weight: bold;
+    font-size: 18px;
 }
 
 
@@ -13,7 +14,7 @@
 }
 
 .fs-process-title {
-    font-size: 48px;
+    font-size: clamp(28px, 5vw, 48px);
     margin: 8px 0 0;
 }
 
@@ -85,6 +86,64 @@
     width: inherit;
 }
 
+/* The desktop timeline above relies on fixed pixel offsets tuned for a
+   wide viewport — text reflow at narrower widths would throw every
+   offset out of alignment. Below this width we hide it and show the
+   simpler, naturally-flowing stacked version instead. */
+@media (max-width: 1100px) {
+    .timeline {
+        display: none;
+    }
+}
+
+
+/* ---- Mobile Timeline (stacked, shown below 1100px) ---- */
+.timeline-mobile {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .timeline-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 8%;
+        position: relative;
+    }
+}
+
+.timeline-mobile-item {
+    position: relative;
+    padding-left: 34px;
+}
+
+.timeline-mobile-item::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: #202020;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #181818;
+}
+
+.timeline-mobile-item::after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 22px;
+    bottom: -40px;
+    width: 2px;
+    background: #000000;
+}
+
+.timeline-mobile-item:last-child::after {
+    display: none;
+}
+
 
 /* ---- Final Decision ---- */
 .fs-finished-section {
@@ -112,7 +171,7 @@
 }
 
 .fs-finished-title {
-    font-size: 42px;
+    font-size: clamp(26px, 4.5vw, 42px);
     font-weight: bold;
     margin: 0 0 16px;
 }

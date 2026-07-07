@@ -14,7 +14,7 @@
 }
 
 .cp-hero-title {
-    font-size: 52px;
+    font-size: clamp(30px, 5.5vw, 52px);
     line-height: 1.15;
     margin: 12px 0 24px;
 }
@@ -36,7 +36,7 @@
 
 /* ---- Shared Section Heading ---- */
 .cp-section-title {
-    font-size: 38px;
+    font-size: clamp(26px, 4vw, 38px);
     font-weight: bold;
     margin: 8px 0 48px;
 }
@@ -87,6 +87,7 @@
     width: 100%;
     padding: 100px 6% 60px 8%;
     margin-left: 180px;
+    margin-right: 35px;
 }
 
 .cp-slant-right .cp-slant-content {
@@ -190,18 +191,29 @@
 }
 
 .cp-service-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #000000;
     margin: 0 0 10px;
 }
 
 .cp-service-desc {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.7;
-    color: #aaaaaa;
+    color: #555;
     font-family: Calibri, sans-serif;
     margin: 0;
+}
+
+@media (max-width: 900px) {
+    .cp-services-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cp-services-left {
+        flex: none;
+    }
 }
 
 
@@ -235,11 +247,24 @@
     margin: 0;
 }
 
+@media (max-width: 900px) {
+    .cp-why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cp-why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* ---- FAQ ---- */
 .cp-faq-section {
     background-color: #f2efe9;
     padding: 100px 8%;
+    font-size: 20px;
 }
 
 .cp-faq-list {
@@ -350,7 +375,7 @@
 }
 
 .wwd-impact-title {
-    font-size: 32px;
+    font-size: clamp(24px, 4vw, 32px);
     font-weight: bold;
     margin: 10px 0 50px;
 }
@@ -385,4 +410,10 @@
     color: #555;
     font-family: Calibri, sans-serif;
     margin: 0;
+}
+
+@media (max-width: 900px) {
+    .wwd-impact-grid {
+        flex-direction: column;
+    }
 }
