@@ -10,10 +10,11 @@
 
 <div class="header-div">
     <div class="club-name text inline">
-        <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+        </a>
     </div>
     <div class="header-options inline">
-        <a class="text header-links" href="/">Home</a>
         <a class="text header-links" href="/our-team">Our Team</a>
         <a class="text header-links" href="/about-us">About Us</a>
         <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
@@ -74,35 +75,35 @@
 <!-- SERVICES -->
 <div class="cp-services-section">
     <div class="cp-services-left">
-        <p class="wwd-section-label text">What We Offer</p>
+        <p class="wwd-label gold text">What We Offer</p>
         <h2 class="cp-section-title text" style="color:#000000;">Services.</h2>
         <!-- <p class="cp-services-note">Every engagement is tailored to your goals. We don't offer cookie-cutter solutions.</p> -->
     </div>
     <div class="cp-services-right">
 
         <div class="cp-service-row">
-            <p class="cp-service-title text">AI Readiness Assessment</p>
-            <p class="cp-service-desc">We audit your current workflows and data landscape to identify where AI can realistically add value — and where it can't. You walk away with a clear, honest picture.</p>
+            <p class="cp-service-title text">AI Strategy</p>
+            <p class="cp-service-desc">We audit workflows where repetitive manual processes are slowing you down. We will build systems and infrastructure that do not bleed time and cost and run without adding headcount.</p>
         </div>
 
         <div class="cp-service-row">
-            <p class="cp-service-title text">Strategy &amp; Roadmapping</p>
-            <p class="cp-service-desc">We develop a prioritized AI strategy with concrete next steps, helping your team understand the tradeoffs and sequence work in the right order.</p>
+            <p class="cp-service-title text">Pipeline Development</p>
+            <p class="cp-service-desc">We will analyze your operations, find leaks for cost and value, and rebuild systems that increase throughput, decrease control costs, and keep your customer experience consistent at scale.</p>
         </div>
 
         <div class="cp-service-row">
-            <p class="cp-service-title text">Process Automation Consulting</p>
-            <p class="cp-service-desc">We identify repetitive, time-consuming tasks that are strong candidates for AI-assisted or full automation, and outline how to get there.</p>
+            <p class="cp-service-title text">AI Tooling &amp; Foundation</p>
+            <p class="cp-service-desc">You don&rsquo;t know where AI can fit? We got you! We assess where AI genuinely fits your business, then help you integrate it with clear implementation guidance. From chatbots to AI agents, we cut through the noise and help you develop tools that your team can actually use.</p>
         </div>
 
         <div class="cp-service-row">
-            <p class="cp-service-title text">Data &amp; Analytics Consulting</p>
-            <p class="cp-service-desc">From pipeline design to dashboard strategy, we help organizations make better decisions by getting more out of the data they already have.</p>
+            <p class="cp-service-title text">AI Risk &amp; Governance</p>
+            <p class="cp-service-desc">AI is not magic and as it seeps into business operations, the risks move with it. We help organizations build the guardrails that let them use AI confidently: auditing systems for compliance, mitigating model risk, and ensuring every AI decision your business makes can be understood, defended, and trusted.</p>
         </div>
 
         <div class="cp-service-row">
-            <p class="cp-service-title text">Implementation Support</p>
-            <p class="cp-service-desc">Where appropriate, we help your team adopt new tools, build internal understanding, and measure the outcomes of AI initiatives after launch.</p>
+            <p class="cp-service-title text">Data Analysis</p>
+            <p class="cp-service-desc">Every problem that occurs is reflected in your data, most times even before it happens . We find those signals in your data and turn them into decisions you can act on before the problem arrives.</p>
         </div>
 
     </div>
@@ -151,7 +152,7 @@
 
 <!-- FAQ -->
 <div class="cp-faq-section">
-    <p class="wwd-section-label text">FAQ</p>
+    <p class="wwd-label gold text">FAQ</p>
     <!-- <h2 class="cp-section-title text">Common questions.</h2> -->
     <div class="cp-faq-list">
 
@@ -176,10 +177,10 @@
             <p class="cp-faq-a">That is one of the key ideas that we are happy to help with.</p>
         </div>
 
-        <div class="cp-faq-item">
+        <!-- <div class="cp-faq-item">
             <p class="cp-faq-q text">Can you build software or tools for us?</p>
             <p class="cp-faq-a">Our primary focus is strategy and consulting, not development. We can design a solution and help you understand what to build — but we'll be upfront if implementation is outside our scope.</p>
-        </div>
+        </div> -->
 
     </div>
 </div>
@@ -191,7 +192,7 @@
         <p class="promotion-text gold text">
             Want to work with us?
         </p>
-        <p class="cp-cta-sub">Reach out and let's start a conversation.</p>
+        <!-- <p class="cp-cta-sub">Reach out and let's start a conversation.</p> -->
         <a href="mailto:purduepioneers@gmail.com">
             <button class="application-button text cp-cta-btn">purduepioneers@gmail.com</button>
         </a>
@@ -199,27 +200,24 @@
 </div>
 
 <!-- IMPACT / USE CASES -->
-<div class="wwd-impact-section">
+<!-- <div class="wwd-impact-section">
     <p class="wwd-label text gold">Impact &amp; Use Cases</p>
     <h2 class="wwd-impact-title text">How we help organizations.</h2>
     <div class="wwd-impact-grid">
         <div class="wwd-impact-card">
-            <!-- <p class="wwd-impact-icon">&#128202;</p> -->
             <p class="wwd-impact-head text">Data Pipeline Optimization</p>
             <p class="wwd-impact-body">Helped a local business reduce manual reporting time by automating data collection and visualization with AI-assisted tooling.</p>
         </div>
         <div class="wwd-impact-card">
-            <!-- <p class="wwd-impact-icon">&#129302;</p> -->
             <p class="wwd-impact-head text">AI Readiness Audits</p>
             <p class="wwd-impact-body">Assessed an organization's current processes and identified where AI could realistically create value — and where it could not.</p>
         </div>
         <div class="wwd-impact-card">
-            <!-- <p class="wwd-impact-icon">&#128172;</p> -->
             <p class="wwd-impact-head text">Customer Experience Strategy</p>
             <p class="wwd-impact-body">Designed an AI-assisted communication framework to improve response consistency and reduce support overhead for a growing startup.</p>
         </div>
     </div>
-</div>
+</div> -->
 
 {% endblock %}
 

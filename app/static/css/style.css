@@ -5,7 +5,7 @@
    TABLE OF CONTENTS
    This file holds only styles shared across multiple pages.
    Anything specific to a single page lives in that page's own
-   CSS file (index.css, about.css, students_page.css, etc).
+   CSS file (index.css, our_team.css, students_page.css, etc).
 
    1. Base Styles     — body, links
    2. Typography      — text helpers, color utilities
@@ -56,8 +56,10 @@ a:visited {
 
 /* Large bold headline used at the top of every page */
 .hero-text {
-    font-size: 60px;
+    font-size: clamp(28px, 6vw, 60px);
     font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Brand color classes */
@@ -130,7 +132,7 @@ a:visited {
     z-index: 999;
     height: 80px;
     border-bottom: 1px solid #8888883e;
-    width: 100vw;
+    width: 100%;
 }
 
 .club-name {
@@ -152,6 +154,13 @@ a:visited {
 
 .header-links {
     margin-left: 50px;
+}
+
+/* Hide the nav links once the header gets too narrow to fit them */
+@media (max-width: 850px) {
+    .header-options {
+        display: none;
+    }
 }
 
 
@@ -191,7 +200,9 @@ a:visited {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 50px;
+    font-size: clamp(26px, 5vw, 50px);
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .promotion-text {
@@ -215,6 +226,29 @@ a:visited {
 
 .application-button:hover {
     cursor: pointer;
+}
+
+/* Below this width the 400px offset would push the button off-screen —
+   fall back to a simple, evenly spaced row instead */
+@media (max-width: 1300px) {
+    .promotion-div {
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .promotion-text {
+        margin-left: 0;
+    }
+
+    .application-button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .promotion-text {
+        text-align: center;
+    }
 }
 
 

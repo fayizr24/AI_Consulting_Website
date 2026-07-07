@@ -8,7 +8,7 @@ def home():
 
 @main.route("/our-team")
 def about():
-    return render_template("about.html")
+    return render_template("our_team.html")
 
 @main.route("/for-students")
 def get_students_page():
@@ -20,5 +20,5 @@ def get_clients_page():
 
 @main.route("/about-us")
 def get_team_page():
-    return render_template("what_we_do.html")
+    return render_template("about_us.html")
 
