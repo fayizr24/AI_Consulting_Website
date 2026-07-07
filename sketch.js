@@ -10,7 +10,7 @@ function setup() {
 }
 
 function mouseWheel(event) {
-  scrollRotation += event.delta * 0.002;
+  scrollRotation += event.delta * 0.002; 
 }
 
 function draw() {
@@ -51,7 +51,7 @@ function drawWavyCircle() {
   beginShape();
   for (let angle = 0; angle < TWO_PI; angle += 0.01) {
 
-    radius = mainRadius + sin(angle * 4) * 30;
+    radius = mainRadius + sin(angle * 4) * 30; 
     // multiply angle to get more waves
 
     let x = cos(angle) * radius;
@@ -69,7 +69,7 @@ function drawGear() {
     let radius = mainRadius;
     let angleDiff = 0;
     let angleSpike = 20;
-
+    
 
     beginShape();
     for (let angle = 0; angle < TWO_PI; angle += 0.02) {

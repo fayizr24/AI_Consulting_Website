@@ -1,21 +1,23 @@
 
+
 window.onload = async () => {
 
-    // New operations
+    document.querySelectorAll(".person-card").forEach((card) => {
+        const hover_panel = card.querySelector(".profile-info-bar");
+        const hover_div = card.querySelector(".profile-info-div");
 
-    const jiya_div = document.getElementById("team-div-jiya");
-    const jiya_hover_panel = document.getElementById("info-panel-jiya");
-    const jiya_hover_div = document.getElementById("info-div-jiya");
-    jiya_hover_panel.addEventListener("mouseenter", () => {
-        jiya_hover_div.classList.remove("hide-transition");
-        jiya_hover_div.classList.add("show-transition");
-    })
+        if (!hover_panel || !hover_div) return;
 
-    jiya_div.addEventListener("mouseleave", () => {
-        jiya_hover_div.classList.remove("show-transition");
-        jiya_hover_div.classList.add("hide-transition");
-    })
+        hover_panel.addEventListener("mouseenter", () => {
+            hover_div.classList.remove("hide-transition");
+            hover_div.classList.add("show-transition");
+        })
+
+        card.addEventListener("mouseleave", () => {
+            hover_div.classList.remove("show-transition");
+            hover_div.classList.add("hide-transition");
+        })
+    });
 
 };
-
 
