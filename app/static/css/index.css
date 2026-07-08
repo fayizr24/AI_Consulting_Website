@@ -61,6 +61,17 @@
     flex: 1;
     align-items: flex-end;
     justify-content: flex-end;
+    gap: 24px;
+}
+
+.pmu-pic {
+    height: 400px;
+    width: auto;
+    max-width: 45%;
+    object-fit: contain;
+    object-position: bottom right;
+    background-color: transparent;
+    border: none;
 }
 
 .purdue-pic {
@@ -81,7 +92,14 @@
     .hero-right-container {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
         margin-top: 40px;
+    }
+
+    .pmu-pic {
+        height: auto;
+        max-width: 120%;
+        max-height: 240px;
     }
 
     .purdue-pic {
