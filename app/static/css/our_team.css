@@ -11,138 +11,122 @@
 }
 
 
-/* ---- Team Grid ---- */
-.main-meet-team-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+/* ---- Founders Grid ----
+   2 columns x 2 rows. Each founder is one .founder-card. */
+.founders-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px 8% 100px;
 }
 
-.team-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.person-card {
+/* One founder's whole card: accent line on top, then the row
+   holding the photo column and the text details. */
+.founder-card {
     position: relative;
-    margin: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 250px;
-    height: 281px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #BDB6A4;
-}
-
-.headshot-pic {
-    height: inherit;
-    width: inherit;
-    border-radius: inherit;
-}
-
-
-/* ---- Profile Info Panel ---- */
-
-/* Warm gradient panel that sits behind a profile info bar */
-.info-panel {
-    /* background: linear-gradient(
-        to bottom,
-        #F5EDD9  100%,
-        #f7f3eb 50%,
-        #F7F7F5  100%
-    ); */
-
-    background-color: #E8E8E4;
-}
-
-/* Name/role card overlaid on the bottom of a headshot */
-.profile-info-bar {
-    position: absolute;
-    z-index: 10;
-    border-radius: 14px;
-    height: 100px;
-    width: 220px;
-    top: 174px;
-    left: 16px;
-    box-sizing: border-box;
-    padding: 14px 18px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 6px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 36px 30px 30px;
+    min-height: 250px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
-.profile-name {
+/* Gold accent bar across the top of every card */
+.founder-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: #B8922A;
+}
+
+/* Row holding the photo column + text details */
+.founder-top {
+    display: flex;
+    gap: 26px;
+    flex: 1;
+}
+
+/* Left column: circular headshot + role/company caption below it */
+.founder-photo-col {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.founder-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.founder-role {
     margin: 0;
-    font-size: 20px;
     font-weight: bold;
     color: #2D2D2D;
-    line-height: 1.2;
 }
 
-.profile-role {
-    margin: 0;
-    font-size: 16.5px;
+.founder-company {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Right column: name + all the labeled info lines */
+.founder-details {
+    flex: 1;
+    font-size: 21px;
+}
+
+.founder-name {
+    margin: 0 0 14px;
+    font-size: 24px;
+}
+
+.founder-field {
+    margin: 4px 0;
+}
+
+.founder-field-label {
     font-weight: bold;
-    font-style: italic;
-    line-height: 1.4;
-    color: #B8922A;
-    letter-spacing: 0.3px;
 }
 
-/* Dark overlay panel covering the full card on hover */
-.profile-info-div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-    background-color: #1E293B;
-    height: inherit;
-    width: inherit;
-    border-radius: 10px;
+.founder-list {
+    margin: 4px 0 14px 20px;
+    padding: 0;
+}
+
+
+/* ---- LinkedIn Icon ----
+   Sits inside .founder-photo-col, directly under the photo. Since it
+   lives in the (fixed-width) photo column instead of at the bottom of
+   the whole card, its position never shifts even if the details column
+   next to it grows or shrinks. */
+.founder-linkedin {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 22px;
-    box-sizing: border-box;
-    pointer-events: none;
-}
-
-/* LinkedIn Button */
-.linkedin-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    background-color: #0A66C2;
-    color: #ffffff;
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 16px;
-    /* border-radius: 20px; */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
-    pointer-events: auto;
-    transition: background-color 0.2s;
-}
-
-.linkedin-button:hover {
-    /* background-color: #004992; */
-    color: #bebebe;
-    cursor: pointer;
+    margin-top: 12px;
 }
 
 .linkedin-icon {
     width: 25px;
     height: 25px;
-    pointer-events: auto;
-    /* border-radius: 5px; */
-    background-color: #054d95;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #0A66C2;
     fill: #ffffff;
     flex-shrink: 0;
+}
+
+.founder-linkedin:hover .linkedin-icon {
+    background-color: #004182;
+    cursor: pointer;
 }

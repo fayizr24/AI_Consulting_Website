@@ -22,3 +22,11 @@ def get_clients_page():
 def get_team_page():
     return render_template("about_us.html")
 
+@main.route("/news")
+def get_news_page():
+    return render_template("news_page.html")
+
+@main.route("/achievements")
+def get_achievements_page():
+    return render_template("achievements_page.html")
+
