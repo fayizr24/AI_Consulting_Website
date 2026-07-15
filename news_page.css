@@ -1,0 +1,150 @@
+/* ============================================================
+   NEWS PAGE STYLES
+   ============================================================ */
+
+/* ---- Subscribe Banner ---- */
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 8%;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-heading {
+    color: black;
+    font-size: clamp(22px, 2.6vw, 32px);
+    font-weight: bold;
+    line-height: 1.35;
+    max-width: 700px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 8800px;
+}
+
+.subscribe-input {
+    flex: 1;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    padding: 0 50px;
+    height: 54px;
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    color: #2D2D2D;
+    background-color: #ffffff;
+}
+
+.subscribe-input:focus {
+    outline: 2px solid #B8922A;
+    outline-offset: -2px;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #B8922A;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.subscribe-button:hover {
+    background-color: #a07f24;
+}
+
+.subscribe-button svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 800px) {
+    .subscribe-form {
+        max-width: 100%;
+    }
+}
+
+
+/* ---- News / Podcasts / Achievements ---- */
+.news-section {
+    background-color: #1a1a1a;
+    color: #f0ede8;
+    padding: 100px 8%;
+}
+
+.news-heading {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.25;
+    margin: 10px 0 60px;
+    color: #f0ede8;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Each card is a link so the whole tile is clickable, not just the title */
+.news-card {
+    display: block;
+    color: inherit;
+}
+
+.news-thumb {
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-thumb {
+    transform: translateY(-4px);
+}
+
+/* Placeholder art until real thumbnails are ready — swap these for
+   background-image: url(...) once you have photos/cover art */
+.news-thumb-news {
+    background: linear-gradient(135deg, #3a2f14 0%, #B8922A 55%, #f0ede8 120%);
+}
+
+.news-thumb-podcast {
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a3c1c 45%, #B8922A 100%);
+}
+
+.news-thumb-achievements {
+    background: linear-gradient(135deg, #B8922A 0%, #2d2d2d 60%, #1a1a1a 100%);
+}
+
+.news-title {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.news-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #aaaaaa;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
