@@ -4,7 +4,16 @@
 
 /* ---- Founders Header ---- */
 .about-founders-div {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+.about-advisors-div {
+    margin-top: 200px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     font-size: 44px;
@@ -12,16 +21,24 @@
 
 
 /* ---- Founders Grid ----
-   2 columns x 2 rows. Each founder is one .founder-card. */
+   Wraps as many founder-cards per row as fit. With 3 founders that
+   means 2 in the first row and the 3rd centered by itself on the
+   second row — justify-content: center handles that automatically,
+   with no need to hard-code which card goes where. If a founder is
+   added or removed later, the wrap/centering keeps working as-is. */
 .founders-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
     padding: 50px 8% 100px;
 }
 
 /* One founder's whole card: accent line on top, then the row
-   holding the photo column and the text details. */
+   holding the photo column and the text details. Fixed width (rather
+   than sizing to content) keeps every card the same size regardless
+   of how much "Ask Me About" text a founder has. */
 .founder-card {
     position: relative;
     display: flex;
@@ -30,8 +47,21 @@
     border-radius: 14px;
     padding: 36px 30px 30px;
     min-height: 250px;
+    flex: 1 1 420px;
+    max-width: 500px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Below this, two 420px-wide cards no longer fit side by side —
+   force every card to its own full-width row instead of letting flex
+   awkwardly shrink them. */
+@media (max-width: 950px) {
+    .founder-card {
+        flex: 1 1 100%;
+        max-width: 480px;
+    }
 }
 
 /* Gold accent bar across the top of every card */
@@ -127,6 +157,113 @@
 }
 
 .founder-linkedin:hover .linkedin-icon {
+    background-color: #004182;
+    cursor: pointer;
+}
+
+
+/* ---- Advisors Grid ----
+   Same wrap/centering approach as .founders-grid, so it keeps working
+   correctly no matter how many advisors are added later — 2 per row,
+   with a leftover odd one out centering itself on its own row. */
+.advisors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 8% 100px;
+}
+
+/* Same card look as .founder-card, just simpler contents
+   (field + short description instead of a bulleted list). */
+.advisor-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 36px 30px 30px;
+    min-height: 250px;
+    flex: 1 1 420px;
+    max-width: 500px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (max-width: 950px) {
+    .advisor-card {
+        flex: 1 1 100%;
+        max-width: 480px;
+    }
+}
+
+.advisor-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: #B8922A;
+}
+
+.advisor-top {
+    display: flex;
+    gap: 26px;
+    flex: 1;
+}
+
+.advisor-photo-col {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advisor-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.advisor-details {
+    flex: 1;
+    font-size: 21px;
+}
+
+.advisor-name {
+    margin: 0 0 14px;
+    font-size: 24px;
+}
+
+.advisor-field {
+    margin: 4px 0 14px;
+}
+
+.advisor-field-label {
+    font-weight: bold;
+}
+
+.advisor-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+/* Sits directly under the photo, same as .founder-linkedin */
+.advisor-linkedin {
+    display: flex;
+    margin-top: 12px;
+}
+
+.advisor-linkedin:hover .linkedin-icon {
     background-color: #004182;
     cursor: pointer;
 }
