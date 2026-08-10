@@ -12,7 +12,7 @@
 }
 
 .about-advisors-div {
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -46,9 +46,10 @@
     background-color: #ffffff;
     border-radius: 14px;
     padding: 36px 30px 30px;
-    min-height: 250px;
+    min-height: 400px;
     flex: 1 1 420px;
-    max-width: 500px;
+    min-width: 450px;
+    max-width: 700px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     box-sizing: border-box;
@@ -184,9 +185,10 @@
     background-color: #ffffff;
     border-radius: 14px;
     padding: 36px 30px 30px;
-    min-height: 250px;
+    min-height: 300px;
+    min-width: 400px;
     flex: 1 1 420px;
-    max-width: 500px;
+    max-width: 550px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     box-sizing: border-box;
@@ -237,8 +239,13 @@
 }
 
 .advisor-name {
-    margin: 0 0 14px;
+    margin: 0 0 2px;
     font-size: 24px;
+}
+
+.advisor-title {
+    margin: 0 0 20px;
+    font-size: 16px;
 }
 
 .advisor-field {
@@ -249,13 +256,20 @@
     font-weight: bold;
 }
 
-.advisor-desc {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #555;
-    font-family: Calibri, sans-serif;
-    margin: 0;
+/* Small gold outlined pill button linking to the advisor's Purdue
+   faculty page — fills solid gold on hover, matching the chevron
+   language used by the FAQ toggles elsewhere on the site. */
+.advisor-about {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 8px 18px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #004182;
 }
+
 
 /* Sits directly under the photo, same as .founder-linkedin */
 .advisor-linkedin {

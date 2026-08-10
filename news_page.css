@@ -37,6 +37,7 @@
     font-family: Calibri, sans-serif;
     color: #2D2D2D;
     background-color: #ffffff;
+    align-items: left;
 }
 
 .subscribe-input:focus {
