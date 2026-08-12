@@ -120,7 +120,7 @@
 
 .founder-name {
     margin: 0 0 14px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .founder-field {
@@ -188,7 +188,7 @@
     min-height: 300px;
     min-width: 400px;
     flex: 1 1 420px;
-    max-width: 550px;
+    max-width: 580px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     box-sizing: border-box;
@@ -240,7 +240,7 @@
 
 .advisor-name {
     margin: 0 0 2px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .advisor-title {
@@ -266,9 +266,17 @@
     margin-top: 14px;
     padding: 8px 18px;
     font-size: 24px;
-    text-decoration: underline;
-    color: #004182;
 }
+
+.advisor-about,
+.advisor-about:link,
+.advisor-about:visited,
+.advisor-about:hover,
+.advisor-about:active {
+    color: #B8922A; /* whatever color you want */
+    text-decoration: underline; /* optional */
+}
+
 
 
 /* Sits directly under the photo, same as .founder-linkedin */
