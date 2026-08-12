@@ -122,33 +122,33 @@ a:visited {
 .header-div {
     color: #000000;
     background-color: #E8E8E4;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 999;
-    height: 80px;
+    height: 96px;
     border-bottom: 1px solid #8888883e;
     width: 100%;
 }
 
 .club-name {
-    font-size: 20px;
+    font-size: 23px;
     margin-right: 20px;
     margin-left: -20px;
 }
 
 .club-logo {
-    height: 84px;
+    height: 100px;
     width: auto;
     margin-right: 50px;
 }
 
 .header-options {
-    font-size: 18px;
+    font-size: 20px;
     padding-right: 60px;
 }
 
@@ -222,10 +222,12 @@ a:visited {
     height: 50px;
     font-size: 20px;
     margin-left: 400px;
+    border: 2px solid #8888884d;
 }
 
 .application-button:hover {
     cursor: pointer;
+    color: #ffffff;
 }
 
 /* Below this width the 400px offset would push the button off-screen —

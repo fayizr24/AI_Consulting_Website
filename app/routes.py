@@ -30,3 +30,7 @@ def get_news_page():
 def get_achievements_page():
     return render_template("achievements_page.html")
 
+@main.route("/calendar")
+def get_calendar_page():
+    return render_template("calendar_page.html")
+
