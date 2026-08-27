@@ -8,9 +8,55 @@
 
 
 /* ---- Hero ---- */
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .cp-hero {
     padding: 120px 10% 100px;
     max-width: 860px;
+    flex: 1 1 500px;
+}
+
+/* Sits to the right of .cp-hero, filling the remaining space */
+.client-div {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 260px;
+    margin-right: 8%;
+    padding: 40px;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.client-pic {
+    height: auto;
+    width: 300px;
+}
+
+.client-div p {
+    margin: 0;
+    /* font-family: Calibri, sans-serif; */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+@media (max-width: 900px) {
+    .client-div {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 .cp-hero-title {

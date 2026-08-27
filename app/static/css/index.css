@@ -18,6 +18,7 @@
 .main-container {
     display: flex;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 /* Thin left margin strip to indent main content from the edge */
@@ -175,6 +176,29 @@
         border-right: 1px solid #8888883e;
         border-top: none;
     }
+}
+
+.our-partners {
+    /* font-family: Calibri, sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+.west-monroe {
+    display: block;
+    height: auto;
+    width: 300px;
+    margin-top: 20px;
 }
 
 
