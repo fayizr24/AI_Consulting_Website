@@ -2,21 +2,82 @@
    ABOUT PAGE STYLES
    ============================================================ */
 
-/* ---- Founders Header ---- */
-.about-founders-div {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    font-size: 44px;
+/* ---- Section Headers (Founders / Advisors) ----
+   Heading + ornamental divider, with a soft gold glow behind the text
+   for a bit of depth instead of leaning on extra caption copy. */
+.team-section-header {
+    position: relative;
+    text-align: center;
+    padding: 0 8%;
+    margin-top: 110px;
 }
 
+.team-section-header-advisors {
+    margin-top: 140px;
+}
+
+/* Soft radial glow sitting behind the heading */
+.team-section-header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    height: 220px;
+    background: radial-gradient(ellipse at center, rgba(184, 146, 42, 0.14) 0%, rgba(184, 146, 42, 0) 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.about-founders-div,
 .about-advisors-div {
-    margin-top: 180px;
-    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     font-size: 44px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* Thin line — diamond — thin line, replacing the plain gold bar */
+.team-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 200px;
+    margin: 28px auto 0;
+}
+
+.team-divider::before,
+.team-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(184, 146, 42, 0.5);
+}
+
+.team-divider-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #B8922A;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+
+/* ---- Scroll Reveal ----
+   Applied to whole section headers / grids as they scroll into view —
+   never to individual founder-card / advisor-card elements. */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -32,7 +93,7 @@
     gap: 30px;
     align-items: flex-start;
     justify-content: center;
-    padding: 50px 8% 100px;
+    padding: 40px 8% 100px;
 }
 
 /* One founder's whole card: accent line on top, then the row
@@ -173,7 +234,7 @@
     gap: 30px;
     align-items: flex-start;
     justify-content: center;
-    padding: 50px 8% 100px;
+    padding: 40px 8% 100px;
 }
 
 /* Same card look as .founder-card, just simpler contents

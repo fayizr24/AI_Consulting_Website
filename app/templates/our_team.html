@@ -28,11 +28,14 @@
 
 </div>
 
-<div class="about-founders-div hero-text">
-    The<span class="gold">&MediumSpace;Founders</span>
+<div class="team-section-header reveal-on-scroll">
+    <div class="about-founders-div hero-text">
+        The<span class="gold">&MediumSpace;Founders</span>
+    </div>
+    <div class="team-divider"><span class="team-divider-dot"></span></div>
 </div>
 
-<div class="founders-grid">
+<div class="founders-grid reveal-on-scroll">
 
     <!-- Jiya -->
     <div class="founder-card">
@@ -144,11 +147,14 @@
 
 </div>
 
-<div class="about-advisors-div hero-text">
-    Our<span class="gold">&MediumSpace;Advisors</span>
+<div class="team-section-header team-section-header-advisors reveal-on-scroll">
+    <div class="about-advisors-div hero-text">
+        Our<span class="gold">&MediumSpace;Advisors</span>
+    </div>
+    <div class="team-divider"><span class="team-divider-dot"></span></div>
 </div>
 
-<div class="advisors-grid">
+<div class="advisors-grid reveal-on-scroll">
 
     <!-- Advisor 1 -->
     <div class="advisor-card">
@@ -190,4 +196,8 @@
 
 
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/team_reveal.js') }}"></script>
 {% endblock %}
