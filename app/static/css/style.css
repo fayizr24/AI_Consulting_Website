@@ -212,7 +212,9 @@ a:visited {
     color: white;
 }
 
-.application-button {
+.application-button,
+.application-button:link,
+.application-button:visited {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,7 +228,8 @@ a:visited {
     border: 2px solid #8888884d;
 }
 
-.application-button:hover {
+.application-button:hover,
+.application-button:visited:hover {
     cursor: pointer;
     color: #ffffff;
 }
