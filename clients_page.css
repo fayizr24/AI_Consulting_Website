@@ -44,7 +44,7 @@
 
 .client-div p {
     margin: 0;
-    /* font-family: Calibri, sans-serif; */
+    /* font-family: Consolas, "Courier New", monospace; */
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -69,7 +69,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     max-width: 620px;
     margin: 0 0 36px;
 }
@@ -173,6 +173,7 @@
     color: #f0ede8;
     padding-left: 26px;
     position: relative;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .cp-slant-list li::before {
@@ -222,7 +223,7 @@
     font-size: 15px;
     line-height: 1.6;
     color: #aaaaaa;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin-top: 16px;
 }
 
@@ -247,7 +248,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -289,7 +290,7 @@
     font-size: 15px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -337,6 +338,7 @@
     justify-content: space-between;
     align-items: center;
     user-select: none;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .cp-faq-q::after {
@@ -360,7 +362,7 @@
     font-size: 15px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
     max-height: 0;
     overflow: hidden;
@@ -402,7 +404,7 @@
 .cp-cta-sub {
     font-size: 18px;
     color: #aaaaaa;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -454,7 +456,7 @@
     font-size: 15px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 

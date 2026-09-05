@@ -84,6 +84,7 @@
 .timeline-text {
     font-size: 20px;
     width: inherit;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* The desktop timeline above relies on fixed pixel offsets tuned for a
@@ -168,6 +169,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     margin: 0 0 10px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .fs-finished-title {

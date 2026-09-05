@@ -97,7 +97,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: #aaaaaa;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -156,7 +156,7 @@
 .wwd-step-num {
     font-size: 36px;
     font-weight: bold;
-    font-family: Georgia, serif;
+    font-family: Consolas, "Courier New", monospace;
     line-height: 1;
     flex-shrink: 0;
 }
@@ -171,7 +171,7 @@
     font-size: 16px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -215,7 +215,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: #555;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
@@ -273,7 +273,7 @@
     font-size: 15px;
     line-height: 1.7;
     color: #aaaaaa;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 
