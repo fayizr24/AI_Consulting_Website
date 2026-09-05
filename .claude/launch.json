@@ -6,6 +6,12 @@
       "runtimeExecutable": "C:\\Users\\fazet\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
       "runtimeArgs": ["run.py"],
       "port": 5050
+    },
+    {
+      "name": "static-root",
+      "runtimeExecutable": "C:\\Users\\fazet\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+      "runtimeArgs": ["-m", "http.server", "8010"],
+      "port": 8010
     }
   ]
 }

@@ -34,7 +34,7 @@
     padding: 0 50px;
     height: 54px;
     font-size: 16px;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     color: #2D2D2D;
     background-color: #ffffff;
     align-items: left;
@@ -139,7 +139,7 @@
     font-size: 15px;
     line-height: 1.6;
     color: #aaaaaa;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 

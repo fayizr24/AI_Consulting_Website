@@ -7,7 +7,7 @@
    here while staying simple enough not to compete with the hero text */
 /* .header-div .club-name,
 .header-div .header-links {
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
 } */
 
 .header-div .header-links {
@@ -15,6 +15,15 @@
 }
 
 /* ---- Hero Section ---- */
+
+/* Reserve a full line's height for each typed hero line up front, so
+   the gap to the description below is already there from the start
+   and doesn't grow/shift as the typing animation fills the text in. */
+#hero-line-1,
+#hero-line-2 {
+    min-height: 1.2em;
+}
+
 .main-container {
     display: flex;
     width: 100%;
@@ -30,6 +39,7 @@
     margin-top: 90px;
     margin-bottom: 10px;
     font-size: 18px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Grows to fill the rest of main-container, next to left-spacing */
@@ -45,15 +55,36 @@
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .main-description-span {
     margin: 0px;
 }
 
+/* ---- Hero Typing Animation ---- */
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 0.85em;
+    margin-left: 4px;
+    background-color: currentColor;
+    vertical-align: text-bottom;
+}
+
+.typing-cursor-blink {
+    animation: hero-cursor-blink 0.8s step-end infinite;
+}
+
+@keyframes hero-cursor-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .application-text {
     margin-left: 180px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Right side of the hero — grows to fill all remaining width */
@@ -143,7 +174,7 @@
     border: 1px solid #8888883e;
     border-left: none;
     color: #888888;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Rightmost stat cell — removes the right border to avoid double border at edge */
@@ -158,7 +189,7 @@
     border-left: none;
     border-right: none;
     color: #888888;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .fact-number {
@@ -179,7 +210,7 @@
 }
 
 .our-partners {
-    /* font-family: Calibri, sans-serif; */
+    /* font-family: Consolas, "Courier New", monospace; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,7 +288,7 @@
 .industry-news-meta {
     font-size: 14px;
     color: #777;
-    font-family: Calibri, sans-serif;
+    font-family: Consolas, "Courier New", monospace;
     margin: 0;
 }
 

@@ -47,7 +47,7 @@ a:visited {
    ============================================================ */
 
 .text {
-    font-family: Georgia, serif;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .italize {
@@ -58,8 +58,10 @@ a:visited {
 .hero-text {
     font-size: clamp(28px, 6vw, 60px);
     font-weight: bold;
+    line-height: 1.2;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Brand color classes */
@@ -155,6 +157,7 @@ a:visited {
 
 .header-links {
     margin-left: 50px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Hide the nav links once the header gets too narrow to fit them */
@@ -177,6 +180,7 @@ a:visited {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .wwd-section-label {
@@ -185,6 +189,7 @@ a:visited {
     text-transform: uppercase;
     color: #B8922A;
     margin-bottom: 10px;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 
@@ -226,6 +231,7 @@ a:visited {
     font-size: 20px;
     margin-left: 400px;
     border: 2px solid #8888884d;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 .application-button:hover,

@@ -37,8 +37,8 @@
             <div class="hero-left-container">
                 <p class="founded-text text charcoal">Purdue University | Founded in 2026</p>
             
-                <p class="text hero-text">Where AI meets</p>
-                <p class="text hero-text"><span class="gold italize">real-world</span> strategy...</p>
+                <p class="text hero-text" id="hero-line-1"></p>
+                <p class="text hero-text" id="hero-line-2"><span class="gold italize" id="hero-line-2-gold"></span><span id="hero-line-2-rest"></span></p>
             
                 <p class="main-description">
                     <span>We are Purdue's first AI focused student-run club that focuses on</span>
@@ -214,6 +214,7 @@
 {% block scripts %}
 <!-- <script src="{{ url_for('static', filename='js/fade.js') }}"></script> -->
 <script src="{{ url_for('static', filename='js/news_articles.js') }}"></script>
+<script src="{{ url_for('static', filename='js/typing_animation.js') }}"></script>
 {% endblock %}
 
 <!--
