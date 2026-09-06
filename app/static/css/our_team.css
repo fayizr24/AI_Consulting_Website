@@ -186,6 +186,16 @@
     font-size: 28px;
 }
 
+.founder-name + .founder-title {
+    margin-top: -12px;
+}
+
+.founder-title {
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-family: Consolas, "Courier New", monospace;
+}
+
 .founder-field {
     margin: 4px 0;
     font-family: Consolas, "Courier New", monospace;
