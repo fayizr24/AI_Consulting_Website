@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}Nish Notes{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nish_notes_page.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="header-div">
+
+    <div class="club-name text inline">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+        </a>
+    </div>
+
+    <div class="header-options inline">
+        <a class="text header-links" href="/our-team">Our Team</a>
+        <a class="text header-links" href="/about-us">About Us</a>
+        <a class="text header-links" href="/news">Club News</a>
+        <a class="text header-links" href="/calendar">Calendar</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
+    </div>
+
+</div>
+
+
+<!-- NISH NOTES -->
+<div class="nish-notes-section">
+    <p class="nish-notes-heading hero-text">NishNotes</p>
+    <h2 class="wwd-label text">
+        Reflections, reads, and <span class="gold italize">conversations</span> from our founder.
+    </h2>
+
+    <div class="nish-notes-grid">
+
+        <article class="nish-notes-card" data-note-id="nish-note-1">
+            <div class="nish-notes-body">
+                <a href="https://www.linkedin.com/pulse/beautiful-game-system-nishant-nair-gbu7e/?trackingId=nxKMbuykTnSsNxT%2BNP84Fg%3D%3D" target="_blank" rel="noopener" class="nish-notes-title-link">
+                    <h3 class="nish-notes-title">The Beautiful Game As A System To Learn From</h3>
+                </a>
+                <div class="nish-notes-footer">
+                    <p class="nish-notes-meta">July 9, 2026</p>
+                    <div class="nish-notes-actions">
+                        <button class="nish-notes-share-btn" type="button" aria-label="Share" data-share-url="https://www.linkedin.com/pulse/beautiful-game-system-nishant-nair-gbu7e/?trackingId=nxKMbuykTnSsNxT%2BNP84Fg%3D%3D">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.3 10.7l7.3-4.2M8.3 13.3l7.3 4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="nish-notes-card" data-note-id="nish-note-2">
+            <div class="nish-notes-body">
+                <a href="https://www.linkedin.com/pulse/defense-larper-nishant-nair-zjote/?trackingId=ExLyilXBTyinm72AH4UdYA%3D%3D" target="_blank" rel="noopener" class="nish-notes-title-link">
+                    <h3 class="nish-notes-title">In Defense Of The LARPer</h3>
+                </a>
+                <div class="nish-notes-footer">
+                    <p class="nish-notes-meta">July 22, 2026</p>
+                    <div class="nish-notes-actions">
+                        <button class="nish-notes-share-btn" type="button" aria-label="Share" data-share-url="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.3 10.7l7.3-4.2M8.3 13.3l7.3 4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="nish-notes-card" data-note-id="nish-note-3">
+            <div class="nish-notes-body">
+                <a href="https://www.linkedin.com/pulse/you-start-walk-way-appears-nishant-nair-ombtf/?trackingId=uL3Mb3AvTwORkV41aKrWBw%3D%3D" target="_blank" rel="noopener" class="nish-notes-title-link">
+                    <h3 class="nish-notes-title">As you start to walk on the way, the way appears</h3>
+                </a>
+                <div class="nish-notes-footer">
+                    <p class="nish-notes-meta">August 7, 2026</p>
+                    <div class="nish-notes-actions">
+                        <button class="nish-notes-share-btn" type="button" aria-label="Share" data-share-url="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.3 10.7l7.3-4.2M8.3 13.3l7.3 4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="nish-notes-card" data-note-id="nish-note-4">
+            <div class="nish-notes-body">
+                <a href="https://www.linkedin.com/pulse/issue-05-callout-season-guide-nishant-nair-jmjle/?trackingId=P%2FmCClyATy%2BZpBmpHMQfgw%3D%3D" target="_blank" rel="noopener" class="nish-notes-title-link">
+                    <h3 class="nish-notes-title">Issue 05 - Callout Season: A Guide</h3>
+                </a>
+                <div class="nish-notes-footer">
+                    <p class="nish-notes-meta">August 29, 2026</p>
+                    <div class="nish-notes-actions">
+                        <button class="nish-notes-share-btn" type="button" aria-label="Share" data-share-url="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.3 10.7l7.3-4.2M8.3 13.3l7.3 4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- <article class="nish-notes-card" data-note-id="nish-note-5">
+            <div class="nish-notes-body">
+                <a href="#" target="_blank" rel="noopener" class="nish-notes-title-link">
+                    <h3 class="nish-notes-title">Placeholder Title Five</h3>
+                </a>
+                <div class="nish-notes-footer">
+                    <p class="nish-notes-meta">Placeholder Date</p>
+                    <div class="nish-notes-actions">
+                        <button class="nish-notes-share-btn" type="button" aria-label="Share" data-share-url="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.3 10.7l7.3-4.2M8.3 13.3l7.3 4.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article> -->
+
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/nish_notes.js') }}"></script>
+{% endblock %}

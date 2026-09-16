@@ -30,6 +30,14 @@ def get_news_page():
 def get_achievements_page():
     return render_template("achievements_page.html")
 
+@main.route("/club-news")
+def get_club_news_page():
+    return render_template("club_news_page.html")
+
+@main.route("/nish-notes")
+def get_nish_notes_page():
+    return render_template("nish_notes_page.html")
+
 @main.route("/calendar")
 def get_calendar_page():
     return render_template("calendar_page.html")

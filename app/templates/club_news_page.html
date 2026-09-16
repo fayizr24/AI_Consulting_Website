@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Club News{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/club_news_page.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="header-div">
+
+    <div class="club-name text inline">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Club_logo.png') }}" class="club-logo">
+        </a>
+    </div>
+
+    <div class="header-options inline">
+        <a class="text header-links" href="/our-team">Our Team</a>
+        <a class="text header-links" href="/about-us">About Us</a>
+        <a class="text header-links" href="/news">Club News</a>
+        <a class="text header-links" href="/calendar">Calendar</a>
+        <a class="text header-links" href="/for-students"><span class="gold">For Students</span></a>
+        <a class="text header-links" href="/for-clients"><span class="gold">For Clients</span></a>
+    </div>
+
+</div>
+
+
+<!-- CLUB NEWS GALLERY -->
+<div class="club-news-section">
+    <p class="wwd-label text gold">Stay Up To Date</p>
+    <h2 class="club-news-heading hero-text">
+        The latest from <span class="gold italize">the club</span>.
+    </h2>
+
+    <div class="club-news-grid">
+
+        <div class="club-news-card">
+            <div class="club-news-photo club-news-photo-1">
+                <img src="{{ url_for('static', filename='images/Expo_Image.jpeg') }}" class="club-news-photo">
+            </div>
+            <p class="club-news-title text">Consulting Expo</p>
+            <p class="club-news-date">Fall 2026</p>
+        </div>
+
+        <div class="club-news-card">
+            <div class="club-news-photo club-news-photo-2"></div>
+            <p class="club-news-title text">Callout #1</p>
+            <p class="club-news-date">Fall 2026</p>
+        </div>
+
+        <div class="club-news-card">
+            <div class="club-news-photo club-news-photo-3"></div>
+            <p class="club-news-title text">Callout #2</p>
+            <p class="club-news-date">Fall 2026</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
