@@ -12,6 +12,12 @@
       "runtimeExecutable": "C:\\Users\\fazet\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
       "runtimeArgs": ["-m", "http.server", "8010"],
       "port": 8010
+    },
+    {
+      "name": "jess-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "C:\\Users\\fazet\\OneDrive\\Desktop\\Programming\\Jess-Counselling-HTML-Final-Optimized-Publishing-2026-09-26\\Jess-Counselling-HTML-Final-Optimized", "run", "dev"],
+      "port": 5173
     }
   ]
 }
